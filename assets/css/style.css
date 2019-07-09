@@ -1,0 +1,51 @@
+/*-------------------- Background Color*/
+
+/*-------------------- Header*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(236, 236, 236, 0.2);
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fafafa;
+}
+
+.social {
+    display: block;
+    list-style: none;
+    text-align: left;
+    position: relative;
+    top: 48vh;
+    right: 45vw;
+}
+
+.social li {
+    display: inline-block;
+}
+
+.social li a {
+    color: #fafafa;
+}
+
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/header.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
