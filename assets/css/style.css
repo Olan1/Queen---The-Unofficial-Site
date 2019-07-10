@@ -1,45 +1,68 @@
+/*-------------------- Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+
+
 /*-------------------- Background Color*/
 
-/*-------------------- Header*/
+/*-------------------- General*/
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Exo', sans-serif;
+    color: #000000;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    margin: 0;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.section-heading {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: 700;
+    padding: 15px;
+}
+
+/*-------------------- Navbar*/
+
 .navbar {
-    background-color: rgba(236, 236, 236, 0.2);
+    background-color: rgba(236, 236, 236, 0.95);
     margin-bottom: 0;
     border: 0;
     width: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fafafa;
+    /*color: #fafafa;*/
 }
 
-.social {
-    display: block;
-    list-style: none;
-    text-align: left;
-    position: relative;
-    top: 48vh;
-    right: 45vw;
-}
 
-.social li {
-    display: inline-block;
-}
-
-.social li a {
-    color: #fafafa;
-}
-
+/*-------------------- Header*/
 
 .header-container {
     height: 100vh;
     width: 100vw;
-    background: url(../images/header.png) no-repeat center center fixed;
+    background: url(../images/header.png) no-repeat 60% center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,4 +71,51 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+
+
+/*-------------------- Footer*/
+
+footer {
+    background-color: rgba(236, 236, 236, .95);
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links {
+    padding-bottom: 15px;
+
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    margin: 0 10px;
+    border-radius: 50%;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background-color: #e84610;
+}
+
+#footer {
+    padding: 20px;
+}
+
+
+
+/*-------------------- Members Section*/
+
+#members .row .col-sm-6 {
+    padding: 0;
 }
