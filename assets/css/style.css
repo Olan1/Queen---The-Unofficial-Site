@@ -4,7 +4,25 @@
 
 
 
+
+
 /*-------------------- Background Color*/
+
+.nav-bg-color {
+    background-color: rgba(236, 236, 236, .5);
+}
+
+.header-bg-color {
+    background-color: rgba(236, 236, 236, .5);
+}
+
+body {
+    background-color: #ECECEC;
+}
+
+
+
+
 
 /*-------------------- General*/
 
@@ -12,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Exo', sans-serif;
-    color: #000000;
+    color: #4a4a4f;
 }
 
 h1,
@@ -23,9 +41,11 @@ h5,
 h6 {
     font-family: 'Cormorant Garamond', sans-serif;
     margin: 0;
+    color: #4a4a4f;
 }
 
 .align-center {
+    display: inline-block;
     text-align: center;
 }
 
@@ -43,21 +63,29 @@ h6 {
     padding: 15px;
 }
 
-/*-------------------- Navbar*/
+.container-fluid {
+    padding: 0;
+}
+
+
+
+
+
+/*-------------------- Header / Navbar*/
 
 .navbar {
-    background-color: rgba(236, 236, 236, 0.95);
-    margin-bottom: 0;
+    /*Bootstrap override*/
+    margin: 0;
+    padding: 0 1rem;
     border: 0;
     width: 100%;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    /*color: #fafafa;*/
+.navbar-light .navbar-nav {
+    /*Bootstrap override*/
+    text-align: right;
+    letter-spacing: 7.5px;
 }
-
-
-/*-------------------- Header*/
 
 .header-container {
     height: 100vh;
@@ -73,14 +101,38 @@ h6 {
     position: relative;
 }
 
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler {
+    font-size: 200%;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler:hover {
+    color: #bb4c02;
+    transform: scale(1.2);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
 
 
 /*-------------------- Footer*/
 
 footer {
-    background-color: rgba(236, 236, 236, .95);
-    min-height: 120px;
     margin: 0;
+    padding: 0 1rem;
+    border: 0;
+    width: 100vw;
 }
 
 .social-links {
@@ -97,25 +149,46 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    background-color: #d35400;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background-color: #c55206;
+    transform: scale(1.1);
 }
 
 #footer {
     padding: 20px;
 }
 
+form {
+    max-width: 50%;
+    display: inline-block;
+}
 
+.divider {
+    width: 70px;
+}
 
-/*-------------------- Members Section*/
+.divider-long {
+    width: 75vw;
+}
 
-#members .row .col-sm-6 {
-    padding: 0;
+#footer .row .my-btn {
+    border-radius: 25%;
+    color: #fafafa;
+    background-color: #d35400;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#footer .row .my-btn:hover {
+    background-color: #c55206;
+    transform: scale(1.1);
 }
