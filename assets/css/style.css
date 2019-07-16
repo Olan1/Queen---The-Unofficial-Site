@@ -40,10 +40,12 @@ h3 {
     color: #000000;
     font-weight: 700;
     padding: 15px;
+    text-align: center;
 }
 
-section{
-    padding-top: 90px;
+section {
+    min-height: 100vh;
+    padding-top: 50px;
 }
 
 .align-center {
@@ -59,14 +61,10 @@ section{
     display: inline-block;
 }
 
-.opaque-overlay{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
+.fa {
+    display: block;
 }
+
 
 
 
@@ -85,7 +83,7 @@ section{
 }
 
 .header-container {
-    background: url(../images/background/header.png) no-repeat 60% center;
+    background: url(../images/background/header.png) no-repeat 60% center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -153,13 +151,13 @@ section{
 
 .dropdown-menu.show {
     display: inline-block;
-    background-color: rgba(236, 236, 236, .5);
+    background-color: transparent;
 }
 
 .dropdown-menu {
     max-width: 8rem;
     text-align: center;
-    background-color: rgba(236, 236, 236, .5);
+    background-color: transparent;
     border: none;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -190,7 +188,7 @@ section{
 /*-------------------- Members Section*/
 
 .members-container {
-    background: url(../images/background/red-smoke.png) no-repeat center 110% fixed;
+    background: url(../images/background/red-smoke.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -198,14 +196,14 @@ section{
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
-.card-deck .card{
+.card-deck .card {
     width: 100%;
     margin-bottom: 15px;
     border: none;
     border-radius: 1rem;
 }
 
-.card-deck .card .img-fluid{
+.card-deck .card .img-fluid {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -221,10 +219,47 @@ section{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
+.carousel{
+    padding-top: 20px;
+}
+
+
+
+
+
+/*-------------------- Videos Section*/
+
+.photos-container {
+    background: url(../images/background/crowd.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+}
+
+iframe {
+    padding: 15px;
+}
+
+
+
+
+
+
+/*-------------------- Music Section*/
+
+.music-container {
+    background: url(../images/background/purple-smoke.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+}
 
 
 
