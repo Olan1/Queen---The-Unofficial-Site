@@ -9,18 +9,20 @@
 /*-------------------- Background Color*/
 
 .nav-bg-color {
-    background-color: rgba(236, 236, 236, .5);
+    background-color: rgba(236, 236, 236, .1);
 }
 
-.header-bg-color {
-    background-color: rgba(236, 236, 236, .5);
-}
 
 
 
 
 
 /*-------------------- General*/
+
+html {
+    scroll-behavior: smooth;
+    /*Source: w3schools - https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1*/
+}
 
 body {
     margin: 0;
@@ -32,13 +34,16 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     font-family: 'Cormorant Garamond', sans-serif;
     margin: 0;
-    color: #4a4a4f;
+    color: #000000;
+    font-weight: 700;
+    padding: 15px;
+}
+
+section{
+    padding-top: 90px;
 }
 
 .align-center {
@@ -54,13 +59,14 @@ h6 {
     display: inline-block;
 }
 
-.section-heading {
-    font-family: "Cormorant Garamond", sans-serif;
-    font-weight: 700;
-    padding: 15px;
+.opaque-overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
-
-
 
 
 
@@ -79,12 +85,13 @@ h6 {
 }
 
 .header-container {
-    background: url(../images/header.png) no-repeat 60% center;
+    background: url(../images/background/header.png) no-repeat 60% center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding-bottom: 100vh;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .navbar-brand {
@@ -110,15 +117,114 @@ h6 {
     outline: none;
 }
 
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #d35400;
-    transform: scale(1.01);
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 500;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d35400;
+    transform: scale(1.01);
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+#dropdownMenuLink {
+    color: #000000;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+#dropdownMenuLink:hover {
+    color: #d35400;
+    transform: scale(1.01);
+}
+
+.dropdown-menu.show {
+    display: inline-block;
+    background-color: rgba(236, 236, 236, .5);
+}
+
+.dropdown-menu {
+    max-width: 8rem;
+    text-align: center;
+    background-color: rgba(236, 236, 236, .5);
+    border: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+
+.dropdown-item {
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: transparent;
+    outline: none;
+    color: #d35400;
+    transform: scale(1.01);
+}
+
+
+
+
+/*-------------------- Members Section*/
+
+.members-container {
+    background: url(../images/background/red-smoke.png) no-repeat center 110% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+}
+
+.card-deck .card{
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 1rem;
+}
+
+.card-deck .card .img-fluid{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+
+
+/*-------------------- Photos Section*/
+
+.photos-container {
+    background: url(../images/background/crowd.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+}
+
 
 
 
@@ -128,13 +234,11 @@ h6 {
 
 footer {
     margin: 0;
-    padding: 0 1rem;
     padding: 20px;
 }
 
 .social-links {
     padding-bottom: 15px;
-
 }
 
 .social-links li a i {
@@ -160,7 +264,6 @@ footer {
 
 form {
     max-width: 50%;
-    display: inline-block;
 }
 
 .divider {
@@ -172,9 +275,10 @@ form {
 }
 
 #footer .row .my-btn {
-    border-radius: 25%;
+    border-radius: 2rem;
     color: #fafafa;
     background-color: #d35400;
+    padding: 5px 15px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -184,4 +288,8 @@ form {
 #footer .row .my-btn:hover {
     background-color: #c55206;
     transform: scale(1.1);
+}
+
+.my-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
 }
