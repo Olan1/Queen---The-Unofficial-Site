@@ -15,7 +15,7 @@
 
     <!--Header-->
     <div id="home" class="container-fluid header-container">
-        <nav class="navbar navbar-expand-xl navbar-light nav-bg-color fixed-top">
+        <nav class="navbar navbar-light nav-bg-color fixed-top">
 
             <a href="#home" class="navbar-brand">
                 <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png">
@@ -61,14 +61,15 @@
     <!--Band Members Section-->
     <section id="members" class="container-fluid members-container">
 
-        <h3 class="uppercase"><i class="fa fa-user-secret"></i>Members</h3>
+        <h3 class="uppercase heading2"><i class="fa fa-user-secret"></i>Members</h3>
 
         <div class="card-deck">
             <div class="row no-gutters">
-                <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
 
+                <!--Freddie Mercury card-->
+                <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/members/freddie-mercury.png" alt="Card image cap">
+                        <a data-toggle="modal" data-target="#freddieModal"><img class="card-img-top img-fluid" src="assets/images/members/freddie-mercury.png" alt="Card image cap"></a>
                         <div class="card-body align-center">
                             <h5 class="card-title">Freddie Mercury</h5>
                             <p class="card-text">Lead vocals Keyboard Guitar</p>
@@ -77,10 +78,21 @@
                     </div>
                 </div>
 
+                <!-- Freddie Mercury modal -->
+                <div class="modal fade" id="freddieModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img class="img-fluid" src="assets/images/members/freddie-mercury.png" alt="Image unavailable">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!--John Deacon card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/members/john-deacon.png" alt="Card image cap">
+                        <a data-toggle="modal" data-target="#johnModal"><img class="card-img-top img-fluid" src="assets/images/members/john-deacon.png" alt="Card image cap"></a>
                         <div class="card-body align-center">
                             <h5 class="card-title">John Deacon</h5>
                             <p class="card-text">Bass Guitar Keyboard</p>
@@ -89,9 +101,21 @@
                     </div>
                 </div>
 
+                <!-- John Deacon modal -->
+                <div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img class="img-fluid" src="assets/images/members/john-deacon.png" alt="Image unavailable">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Brian May card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/members/brian-may.png" alt="Card image cap">
+                        <a data-toggle="modal" data-target="#brianModal"><img class="card-img-top img-fluid" src="assets/images/members/brian-may.png" alt="Card image cap"></a>
                         <div class="card-body align-center">
                             <h5 class="card-title">Brian May</h5>
                             <p class="card-text">Guitar Keyboard Vocals</p>
@@ -100,13 +124,36 @@
                     </div>
                 </div>
 
+                <!-- Brian May modal -->
+                <div class="modal fade" id="brianModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img class="img-fluid" src="assets/images/members/brian-may.png" alt="Image unavailable">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Roger Taylor card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/members/roger-taylor.png" alt="Card image cap">
+                        <a data-toggle="modal" data-target="#rogerModal"><img class="card-img-top img-fluid" src="assets/images/members/roger-taylor.png" alt="Card image cap"></a>
                         <div class="card-body align-center">
                             <h5 class="card-title">Roger Taylor</h5>
                             <p class="card-text">Drums Guitar Keyboard Vocals</p>
                             <p class="card-text"><small class="text-muted">1970 - Present</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roger Taylor modal -->
+                <div class="modal fade" id="rogerModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img class="img-fluid" src="assets/images/members/roger-taylor.png" alt="Image unavailable">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,75 +164,218 @@
 
 
     <!--Photos Section-->
-    <section id="photos" class="container-fluid photos-container">
+    <section id="photos" class="container-fluid photo-container">
+        <div class="container-fluid opaque-overlay">
 
-        <h3 class="uppercase"><i class="fa fa-camera-retro"></i>Photo Gallery</h3>
+            <h3 class="uppercase"><i class="fa fa-camera-retro"></i>Photo Gallery</h3>
 
-        <!--Code source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
-        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-sideview.png" alt="First slide">
+            <!--Code source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-sideview.png" alt="First slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-1.png" alt="Second slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/freddie-backward-pose.png" alt="Third slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-2.png" alt="Fourth slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-1.png" alt="Fifth slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-3.png" alt="Sixth slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-2.png" alt="Seventh slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-4.png" alt="Eight slide">
+                    </div>
                 </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-1.png" alt="Second slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/freddie-backward-pose.png" alt="Third slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-2.png" alt="Fourth slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-1.png" alt="Fifth slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-3.png" alt="Sixth slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-2.png" alt="Seventh slide">
-                </div>
-
-                <div class="carousel-item">
-                    <img class="d-block img-fluid m-auto" src="assets/images/photos/live-color-4.png" alt="Eight slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
+            </div>
         </div>
-
     </section>
     <!-- /.Photos Section-->
 
 
     <!--Videos Section-->
-    <section id="videos" class="container-fluid gallery-container">
+    <section id="videos" class="container-fluid video-container">
 
-        <h3 class="uppercase"><i class="fa fa-film"></i>Video Gallery</h3>
+        <h3 class="uppercase heading2"><i class="fa fa-film"></i>Video Gallery</h3>
+
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-auto embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div class="card-deck">
+                <div class="row no-gutters">
 
-                <div class="col-auto embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HgzGwKwLmgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                    <!--Bohemian Rhapsody card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#bohemianModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/bohemian-rhapsody.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">Bohemian Rhapsody</h5>
+                                <p class="card-text"><small class="text-muted">1975</small></p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-auto embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GMWp4SWzspw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- Bohemian Rhapsody modal -->
+                    <div class="modal fade" id="bohemianModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fJ9rUzIMcZQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Don't Stop Me Now card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#dontStopMeNowModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/dont-stop-me-now.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">Don't Stop Me Now</h5>
+                                <p class="card-text"><small class="text-muted">1978</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Don't Stop Me Now modal -->
+                    <div class="modal fade" id="dontStopMeNowModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HgzGwKwLmgM?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fat Bottomed Girls card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#fatBottomedGirlsModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/fat-bottomed-girls.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">Fat Bottomed Girls</h5>
+                                <p class="card-text"><small class="text-muted">1978</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fat Bottomed Girls modal -->
+                    <div class="modal fade" id="fatBottomedGirlsModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GMWp4SWzspw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--You're My Best Friend card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#bestFriendModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/youre-my-best-friend.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">You're My Best Friend</h5>
+                                <p class="card-text"><small class="text-muted">1975</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- You're My Best Friend modal -->
+                    <div class="modal fade" id="bestFriendModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HaZpZQG2z10?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seven Seas of Rhye card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#sevenSeasModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/seven-seas-of-rhye.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">Seven Seas of Rhye</h5>
+                                <p class="card-text"><small class="text-muted">1973</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seven Seas of Rhye modal -->
+                    <div class="modal fade" id="sevenSeasModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FxIo57WURRE?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- We Will Rock You card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a data-toggle="modal" data-target="#rockYouModal">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/videos/we-will-rock-you.png" alt="Card image cap">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <div class="card-body align-center">
+                                <h5 class="card-title">We Will Rock You</h5>
+                                <p class="card-text"><small class="text-muted">1977</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- We Will Rock You modal -->
+                    <div class="modal fade" id="rockYouModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-tJYN-eG1zk?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,16 +385,38 @@
 
     <!--Music Section-->
     <section id="music" class="container-fluid music-container">
-        <h3 class="uppercase"><i class="fa fa-headphones"></i>Music</h3>
-        <div class="container">
+        <h3 class="uppercase heading2"><i class="fa fa-headphones"></i>Music</h3>
+        <div class="container pb-2">
+            <div class="row">
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/5vdp5UmvTsnMEMESIF2Ym7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/2fuCquhmrzHpu5xcA1ci9x" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/5txoZyuAmtCfmDjUCEphWm" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/3Dpyn5Cu7BdURzo2ov4dku" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/5RYLa5P4qweEAKq5U1gdcK" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col col-sm-6 col-lg-4 mt-2">
+                    <iframe src="https://open.spotify.com/embed/track/3Z4poAx8XqlR2xm7eFwQ37" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- /.Music Section-->
 
 
     <!--Trailer Section-->
-    <section id="trailer">
-
+    <section id="trailer" class="container-fluid m-0 p-0">
+            <h3 class="uppercase trailerHeading"><i class="fa fa-film"></i>Bohemian Rhapsody Trailer</h3>
+            <iframe class="trailer-bg" src="https://www.youtube.com/embed/mP0VHJYFOAU?autoplay=1" allowfullscreen></iframe>
     </section>
     <!-- /.Movie Section-->
 
@@ -217,8 +429,24 @@
 
 
     <!--Fan Club Signup Section-->
-    <section id="fan-club">
-
+    <section id="fan-club" class="container-fluid">
+        <div class="row align-self-center col-sm">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </section>
     <!-- /.Fan Club Signup Section-->
 
@@ -228,8 +456,8 @@
         <div class="row no-gutters footer-bg-color">
 
             <div class="col-sm-4 align-center pb-2">
-                <h5 class="uppercase pb-4">Get Queen Updates</h5>
-                <form class="justify-content-center inline-block">
+                <h5 class="uppercase heading2 pb-4">Get Queen Updates</h5>
+                <form class="form-sm justify-content-center inline-block">
                     <div class="form-group">
                         <input type="email" class="form-control form-control-sm" id="emailUpdates" aria-describedby="emailHelp" placeholder="Email">
                     </div>
@@ -246,7 +474,7 @@
             </div>
 
             <div class="col-sm-4  align-center pb-2">
-                <h5 class="uppercase pb-4">Social</h5>
+                <h5 class="uppercase heading2 pb-4">Social</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item ">
                         <a href="https://www.facebook.com/Queen/" target="_blank">
