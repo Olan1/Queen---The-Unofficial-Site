@@ -88,13 +88,32 @@ a:hover {
     padding: 0;
 }
 
-.opaque-overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+.my-btn {
+    border-radius: 2rem;
+    color: #fafafa;
+    background-color: #d8c4bf;
+    padding: 5px 15px;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.my-btn:hover {
+    background-color: #cab0aa;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+.my-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -262,7 +281,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .carousel {
@@ -275,6 +293,15 @@ a:hover {
 
 .fa-camera-retro {
     padding-top: 50px;
+}
+
+.opaque-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -296,7 +323,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .vidImage+.fa-youtube-play {
@@ -328,7 +354,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 
@@ -337,12 +362,12 @@ a:hover {
 
 /*-------------------- Movie Trailer Section*/
 
-#trailer{
+#trailer {
     padding: 0;
     margin: 0;
 }
 
-.trailerHeading{
+.trailerHeading {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -353,7 +378,7 @@ a:hover {
     padding: 0;
     margin: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -361,11 +386,41 @@ a:hover {
 
 /*-------------------- Fan Club Section*/
 
+.fan-club-container {
+    background: url(../images/background/yellow-smoke.png) no-repeat center 75%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#fan-club form {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.middle {
+    position: relative;
+    top: 25vh;
+}
+
+
+
+
+
 /*-------------------- Footer*/
 
 footer {
     margin: 0;
     padding: 20px;
+}
+
+.footer-container {
+    background: url(../images/background/band-pixels.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .social-links {
@@ -399,28 +454,4 @@ footer {
 
 .divider {
     width: 70px;
-}
-
-.divider-long {
-    width: 75vw;
-}
-
-#footer .row .my-btn {
-    border-radius: 2rem;
-    color: #fafafa;
-    background-color: #d8c4bf;
-    padding: 5px 15px;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-#footer .row .my-btn:hover {
-    background-color: #cab0aa;
-    transform: scale(1.1);
-}
-
-.my-btn:focus {
-    box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
 }
