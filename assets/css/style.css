@@ -9,7 +9,7 @@
 /*-------------------- Background Color*/
 
 .nav-bg-color {
-    background-color: rgba(236, 236, 236, .1);
+    background-color: rgba(236, 236, 236, .5);
 }
 
 
@@ -32,24 +32,42 @@ body {
     background-color: rgb(236, 236, 236);
 }
 
-h1,
-h2,
+.text-outline {
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: left;
+    color: #e268cd;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: right;
+    color: #e268cd;
+}
+
 h3 {
     font-family: 'Cormorant Garamond', sans-serif;
     margin: 0;
-    color: #d8c4bf;
+    color: #e268cd;
     font-weight: 700;
     padding: 15px;
     text-align: center;
 }
 
-.heading2 {
-    color: #757575;
-}
-
 section {
     min-height: 100vh;
-    padding-top: 50px;
 }
 
 .align-center {
@@ -89,9 +107,10 @@ a:hover {
 }
 
 .my-btn {
+    border: 1px solid #000;
     border-radius: 2rem;
     color: #fafafa;
-    background-color: #d8c4bf;
+    background-color: #e268cd;
     padding: 5px 15px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -100,7 +119,7 @@ a:hover {
 }
 
 .my-btn:hover {
-    background-color: #cab0aa;
+    background-color: #e268fd;
     color: #fafafa;
     transform: scale(1.1);
 }
@@ -150,7 +169,7 @@ a:hover {
 }
 
 .navbar-light .navbar-toggler {
-    color: #d8c4bf;
+    color: #e268cd;
     font-size: 200%;
     border: none;
     transition: all 0.2s ease-in-out;
@@ -160,7 +179,7 @@ a:hover {
 }
 
 .navbar-light .navbar-toggler:hover {
-    color: #cab0aa;
+    color: #e268fd;
     transform: scale(1.2);
 }
 
@@ -170,7 +189,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
-    color: #d8c4bf;
+    color: #e268cd;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -180,7 +199,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #cab0aa;
+    color: #e268fd;
     transform: scale(1.01);
 }
 
@@ -189,7 +208,7 @@ a:hover {
 }
 
 #dropdownMenuLink {
-    color: #d8c4bf;
+    color: #e268cd;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -198,7 +217,7 @@ a:hover {
 }
 
 #dropdownMenuLink:hover {
-    color: #cab0aa;
+    color: #e268fd;
     transform: scale(1.01);
 }
 
@@ -220,7 +239,7 @@ a:hover {
 
 
 .dropdown-item {
-    color: #d8c4bf;
+    color: #e268cd;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -231,10 +250,15 @@ a:hover {
 .dropdown-item:hover {
     background-color: transparent;
     outline: none;
-    color: #cab0aa;
+    color: #e268fd;
     transform: scale(1.01);
 }
 
+.heading {
+    position: absolute;
+    top: 25%;
+    left: 7.5%;
+}
 
 
 
@@ -291,10 +315,6 @@ a:hover {
     padding: 0;
 }
 
-.fa-camera-retro {
-    padding-top: 50px;
-}
-
 .opaque-overlay {
     position: relative;
     top: 0;
@@ -309,13 +329,6 @@ a:hover {
 
 
 /*-------------------- Videos Section*/
-
-@media (min-width: 576px) {
-    #videos .modal .modal-dialog {
-        max-width: 900px;
-    }
-
-}
 
 .video-container {
     background: url(../images/background/purple-smoke.png) no-repeat center center fixed;
@@ -428,6 +441,7 @@ footer {
 }
 
 .social-links li a i {
+    border: 1px solid #000;
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -436,7 +450,7 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #d8c4bf;
+    background-color: #e268cd;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -444,7 +458,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #cab0aa;
+    background-color: #e268fd;
     transform: scale(1.1);
 }
 
@@ -454,4 +468,16 @@ footer {
 
 .divider {
     width: 70px;
+}
+
+
+
+
+
+/*-------------------- Media Queries*/
+
+@media (min-width: 576px) {
+    #videos .modal .modal-dialog {
+        max-width: 900px;
+    }
 }

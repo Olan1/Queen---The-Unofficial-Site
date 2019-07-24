@@ -14,7 +14,7 @@
 <body>
 
     <!--Header-->
-    <div id="home" class="container-fluid header-container">
+    <div id="home" class="container-fluid header-container text-outline">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
 
             <a href="#home" class="navbar-brand">
@@ -22,7 +22,7 @@
                 <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png">
             </a>
 
-            <button class="navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto mr-2 text-outline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
 
@@ -48,12 +48,17 @@
 
                     <li class="nav-item"><a href="#trailer" class="nav-link">Trailer</a></li>
 
-                    <li class="nav-item"><a href="#merch" class="nav-link">Merch</a></li>
+                    <li class="nav-item"><a href="#store" class="nav-link">Store</a></li>
 
-                    <li class="nav-item"><a href="#fan-club" class="nav-link">Fan Club</a></li>
+                    <li class="nav-item"><a href="#fan-club" class="nav-link">Join Us</a></li>
                 </ul>
             </div>
         </nav>
+
+        <div class="heading">
+            <h1 class="uppercase">Queen</h1>
+            <h2 class="uppercase">Unnoficial Site</h2>
+        </div>
     </div>
     <!-- /.Header -->
 
@@ -61,7 +66,7 @@
     <!--Band Members Section-->
     <section id="members" class="container-fluid members-container">
 
-        <h3 class="uppercase heading2"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3>
+        <h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3>
 
         <div class="card-deck">
             <div class="row no-gutters">
@@ -167,7 +172,7 @@
     <section id="photos" class="container-fluid photo-container">
         <div class="container-fluid opaque-overlay">
 
-            <h3 class="uppercase"><i class="fa fa-camera-retro"></i>Photo Gallery</h3>
+            <h3 class="uppercase text-outline"><i class="fa fa-camera-retro"></i>Photos</h3>
 
             <!--Code source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -221,7 +226,7 @@
     <!--Videos Section-->
     <section id="videos" class="container-fluid video-container">
 
-        <h3 class="uppercase heading2"><i class="fa fa-film"></i>Video Gallery</h3>
+        <h3 class="uppercase text-outline"><i class="fa fa-film"></i>Videos</h3>
 
         <div class="container">
             <div class="card-deck">
@@ -385,7 +390,7 @@
 
     <!--Music Section-->
     <section id="music" class="container-fluid music-container">
-        <h3 class="uppercase heading2"><i class="fa fa-headphones"></i>Music</h3>
+        <h3 class="uppercase text-outline"><i class="fa fa-headphones"></i>Music</h3>
         <div class="container pb-2">
             <div class="row">
                 <div class="col col-sm-6 col-lg-4 mt-2">
@@ -415,15 +420,15 @@
 
     <!--Trailer Section-->
     <section id="trailer" class="container-fluid m-0 p-0">
-        <h3 class="uppercase trailerHeading"><i class="fa fa-film"></i>Bohemian Rhapsody Trailer</h3>
+        <h3 class="uppercase trailerHeading text-outline"><i class="fa fa-film"></i>Bohemian Rhapsody</h3>
         <iframe class="trailer-bg" src="https://www.youtube.com/embed/mP0VHJYFOAU?autoplay=1" allowfullscreen></iframe>
     </section>
     <!-- /.Movie Section-->
 
 
-    <!--Merchandise Shop Section-->
-    <section id="merch">
-        <h3 class="uppercase heading2"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Merch Store</h3>
+    <!--Store Section-->
+    <section id="store">
+        <h3 class="uppercase text-outline"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3>
         <div class="container bg-white">
             <div class="row">
                 <div class="col col-sm-6 col-lg-4 border">
@@ -464,9 +469,9 @@
 
     <!--Fan Club Signup Section-->
     <section id="fan-club" class="container-fluid fan-club-container">
-        <div class="container">
-            <h3 class="uppercase heading2"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Become A Member</h3>
-            <div class="row justify-content-center middle">
+        <div class="container middle">
+            <h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Become A Member</h3>
+            <div class="row justify-content-center">
                 <div class="col col-sm-8 col-md-6 col-lg-4">
                     <form>
                         <div class="form-group">
@@ -480,7 +485,7 @@
                             <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">Terms and Conditions</a></label>
                         </div>
                         <div class="pt-2">
-                            <button type="submit" class="btn my-btn">Submit</button>
+                            <button type="submit" class="btn my-btn text-outline">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -495,16 +500,16 @@
 
     <!--Footer-->
     <footer id="footer" class="container-fluid footer-container">
-        <div class="row no-gutters footer-bg-color">
+        <div class="row pt-5 footer-bg-color">
 
             <!--Form-->
-            <div class="col-sm-4 align-center pb-2">
-                <h5 class="uppercase heading2 pb-4">Get Queen Updates</h5>
+            <div class="col-sm-4 align-center pb-2 text-outline">
+                <h5 class="uppercase text-white pb-4">Get Queen Updates</h5>
                 <form class="form-sm justify-content-center inline-block">
                     <div class="form-group">
                         <input type="email" class="form-control form-control-sm" id="emailUpdates" aria-describedby="emailHelp" placeholder="Email">
                     </div>
-                    <button type="submit" class="btn my-btn">Submit</button>
+                    <button type="submit" class="btn my-btn text-outline">Submit</button>
                 </form>
                 <hr class="divider d-sm-none">
             </div>
@@ -518,8 +523,8 @@
             </div>
 
             <!--Social-->
-            <div class="col-sm-4  align-center pb-2">
-                <h5 class="uppercase heading2 pb-4">Social</h5>
+            <div class="col-sm-4  align-center pb-2 text-outline">
+                <h5 class="uppercase text-white pb-4">Social</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item ">
                         <a href="https://www.facebook.com/Queen/" target="_blank">
@@ -565,7 +570,7 @@
 
             <div class="col align-center">
                 <hr class="d-none d-sm-block divider">
-                <p><i class="fa fa-copyright"></i> 2019 Queen</p>
+                <p class="text-muted"><i class="fa fa-copyright"></i> 2019 Queen</p>
             </div>
         </div>
     </footer>
