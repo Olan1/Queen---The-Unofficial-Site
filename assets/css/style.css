@@ -16,7 +16,6 @@
 
 
 
-
 /*-------------------- General*/
 
 html {
@@ -46,7 +45,7 @@ h1 {
     font-weight: 700;
     font-size: 5rem;
     text-align: left;
-    color: #e268cd;
+    color: #fafafa;
 }
 
 h2 {
@@ -55,13 +54,13 @@ h2 {
     font-weight: 700;
     font-size: 1.5rem;
     text-align: right;
-    color: #e268cd;
+    color: #fafafa;
 }
 
 h3 {
     font-family: 'Cormorant Garamond', sans-serif;
     margin: 0;
-    color: #e268cd;
+    color: #fafafa;
     font-weight: 700;
     padding: 15px;
     text-align: center;
@@ -97,16 +96,6 @@ a:hover {
     text-decoration: none;
 }
 
-.modal-content,
-.modal-content .img-fluid {
-    border: none;
-    background-color: transparent;
-}
-
-.modal .modal-body {
-    padding: 0;
-}
-
 .my-btn {
     border: 1px solid #000;
     border-radius: 2rem;
@@ -123,6 +112,7 @@ a:hover {
     background-color: #e268fd;
     color: #fafafa;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .my-btn:focus {
@@ -155,7 +145,7 @@ a:hover {
 }
 
 .header-container {
-    background: url(../images/background/header.png) no-repeat 60% center fixed;
+    background: url(../images/background/header.png) no-repeat 60% center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -170,7 +160,7 @@ a:hover {
 }
 
 .navbar-light .navbar-toggler {
-    color: #e268cd;
+    color: #fafafa;
     font-size: 200%;
     border: none;
     transition: all 0.2s ease-in-out;
@@ -180,7 +170,7 @@ a:hover {
 }
 
 .navbar-light .navbar-toggler:hover {
-    color: #e268fd;
+    color: #fafaff;
     transform: scale(1.2);
 }
 
@@ -190,7 +180,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link {
-    color: #e268cd;
+    color: #fafafa;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -200,7 +190,7 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #e268fd;
+    color: #fafaff;
     transform: scale(1.01);
 }
 
@@ -209,7 +199,7 @@ a:hover {
 }
 
 #dropdownMenuLink {
-    color: #e268cd;
+    color: #fafafa;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -218,7 +208,7 @@ a:hover {
 }
 
 #dropdownMenuLink:hover {
-    color: #e268fd;
+    color: #fafaff;
     transform: scale(1.01);
 }
 
@@ -240,7 +230,7 @@ a:hover {
 
 
 .dropdown-item {
-    color: #e268cd;
+    color: #fafafa;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -251,7 +241,7 @@ a:hover {
 .dropdown-item:hover {
     background-color: transparent;
     outline: none;
-    color: #e268fd;
+    color: #fafaff;
     transform: scale(1.01);
 }
 
@@ -291,11 +281,19 @@ a:hover {
     -o-transition: all 0.2s ease-in-out;
 }
 
-.card-deck .card .img-fluid:hover {
+.card-deck .card:hover {
     opacity: 0.9;
 }
 
+.modal .img-fluid {
+    width: 100%;
+}
 
+.modal-content {
+    border: 1px solid #000;
+    color: #fafafa;
+    background-color: #e268cd;
+}
 
 
 /*-------------------- Photos Section*/
@@ -310,6 +308,10 @@ a:hover {
 
 .carousel {
     padding-top: 20px;
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #photos {
@@ -325,6 +327,10 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#carouselIndicators .img-fluid {
+    max-width: 100vw;
+    max-height: 60vh;
+}
 
 
 
@@ -354,6 +360,16 @@ a:hover {
 .vidImage:hover+.fa-youtube-play,
 .vidImage+.fa-youtube-play:hover {
     display: block;
+}
+
+#videos .modal-content,
+#videos .modal-content .img-fluid {
+    border: none;
+    background-color: transparent;
+}
+
+#videos .modal .modal-body {
+    padding: 0;
 }
 
 
@@ -396,7 +412,24 @@ a:hover {
 }
 
 
-/*-------------------- Merchandise Section*/
+/*-------------------- Store Section*/
+
+#store .card .card-body {
+    width: 100%;
+    color: #4a4a4f;
+}
+
+#store .card .card-body:hover {
+    color: #4a4f4f;
+}
+
+.store-container {
+    background: url(../images/background/pose.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 /*-------------------- Fan Club Section*/
 

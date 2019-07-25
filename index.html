@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!--Source: https://stackoverflow.com/questions/10691021/how-to-insert-logo-with-the-title-of-a-html-page-->
     <title>Queen</title>
 </head>
 
 <body>
-
     <!--Header-->
     <div id="home" class="container-fluid header-container text-outline">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
@@ -57,11 +58,10 @@
 
         <div class="heading">
             <h1 class="uppercase">Queen</h1>
-            <h2 class="uppercase">Unnoficial Site</h2>
+            <h2 class="uppercase">Unofficial Site</h2>
         </div>
     </div>
     <!-- /.Header -->
-
 
     <!--Band Members Section-->
     <section id="members" class="container-fluid members-container">
@@ -74,21 +74,40 @@
                 <!--Freddie Mercury card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <a data-toggle="modal" data-target="#freddieModal"><img class="card-img-top img-fluid" src="assets/images/members/freddie-mercury.png" alt="Card image cap"></a>
-                        <div class="card-body align-center">
-                            <h5 class="card-title">Freddie Mercury</h5>
-                            <p class="card-text">Lead vocals Keyboard Guitar</p>
-                            <p class="card-text"><small class="text-muted">1970 - 1991</small></p>
-                        </div>
+                        <a class="align-center" data-toggle="modal" data-target="#freddieModal">
+                            <img class="card-img-top img-fluid" src="assets/images/members/freddie-mercury.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Freddie Mercury</h5>
+                                <p class="card-text">Lead vocals Keyboard Guitar</p>
+                                <p class="card-text"><small class="text-muted">1970 - 1991</small></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Freddie Mercury modal -->
-                <div class="modal fade" id="freddieModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal fade" id="freddieModal" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLongTitle">Freddie Mercury</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                                <img class="img-fluid" src="assets/images/members/freddie-mercury.png" alt="Image unavailable">
+                                <img class="img-fluid pb-2" src="assets/images/members/freddie-mercury.png" alt="Image unavailable">
+                                <p>Freddie Mercury (born Farrokh Bulsara; 5 September 1946 – 24 November 1991) was a British singer, songwriter, record producer, and lead vocalist of the rock band Queen. Regarded as one of the greatest lead singers in the
+                                    history of rock music, he was known for his flamboyant stage persona and four-octave vocal range.</p>
+                                <p>Born in 1946 in Zanzibar to Parsi parents from India, he attended English-style boarding schools in India from the age of eight and returned to Zanzibar after secondary school. In 1964, his family fled the Zanzibar Revolution,
+                                    moving to Middlesex, England.</p>
+                                <p>Having studied and written music for years, he formed Queen in 1970 with guitarist Brian May and drummer Roger Taylor. Mercury wrote numerous hits for Queen, including "Killer Queen", "Bohemian Rhapsody", "Somebody to Love",
+                                    "We Are the Champions", "Don't Stop Me Now", and "Crazy Little Thing Called Love". He also led a solo career and served as a producer and guest musician for other artists.</p>
+                                <p>Mercury died in 1991 at age 45 due to complications from AIDS. He confirmed the day before his death that he had contracted the disease. In 1992, a tribute concert was held at Wembley Stadium. As a member of Queen, Mercury
+                                    was posthumously inducted into the Rock and Roll Hall of Fame in 2001, the Songwriters Hall of Fame in 2003, and the UK Music Hall of Fame in 2004. In 1990, he and the other Queen members were awarded the Brit Award
+                                    for Outstanding Contribution to British Music, and one year after his death Mercury was awarded it individually. In 2005, Queen were awarded an Ivor Novello Award for Outstanding Song Collection from the British Academy
+                                    of Songwriters, Composers, and Authors. In 2002, Mercury ranked number 58 in the BBC's poll of the 100 Greatest Britons.</p>
+                                <p class="text-muted"><small>Source: <a>https://en.wikipedia.org/wiki/Freddie_Mercury</a></small></p>
                             </div>
                         </div>
                     </div>
@@ -97,21 +116,38 @@
                 <!--John Deacon card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <a data-toggle="modal" data-target="#johnModal"><img class="card-img-top img-fluid" src="assets/images/members/john-deacon.png" alt="Card image cap"></a>
-                        <div class="card-body align-center">
-                            <h5 class="card-title">John Deacon</h5>
-                            <p class="card-text">Bass Guitar Keyboard</p>
-                            <p class="card-text"><small class="text-muted">1970 - 1997</small></p>
-                        </div>
+                        <a class="align-center" data-toggle="modal" data-target="#johnModal">
+                            <img class="card-img-top img-fluid" src="assets/images/members/john-deacon.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">John Deacon</h5>
+                                <p class="card-text">Bass Guitar Keyboard</p>
+                                <p class="card-text"><small class="text-muted">1970 - 1997</small></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- John Deacon modal -->
-                <div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLongTitle">John Deacon</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                                <img class="img-fluid" src="assets/images/members/john-deacon.png" alt="Image unavailable">
+                                <img class="img-fluid pb-2" src="assets/images/members/john-deacon.png" alt="Image unavailable">
+                                <p>John Richard Deacon (born 19 August 1951) is a retired English musician, best known for being the bass guitarist for the rock band Queen. He composed several songs for the group—including Top 10 hits "You're My Best Friend",
+                                    "Another One Bites the Dust", "Back Chat", and "I Want to Break Free", and was involved in the band's financial management.</p>
+                                <p>Deacon grew up in Oadby, Leicestershire, playing bass in a local band, The Opposition, before moving to study electronics at Chelsea College, London. He joined Queen in 1971 on the strength of his musical and electronic
+                                    skills, particularly the home-made Deacy Amp which guitarist Brian May used to create guitar orchestras throughout Queen's career. From the third album, Sheer Heart Attack, onwards, he wrote at least one song per album,
+                                    several of which became hits.</p>
+                                <p>As well as bass, Deacon played some guitar and keyboards on Queen's studio work.</p>
+                                <p>After the death of lead singer Freddie Mercury in 1991 and the following year's Tribute Concert, Deacon performed only sporadically with the remaining members of Queen before retiring from the music industry in 1997 after
+                                    recording "No-One but You (Only the Good Die Young)". He has not performed on any of the other projects that the other two surviving members, Brian May and Roger Taylor, have put together.</p>
+                                <p class="text-muted"><small>Source: <a>https://en.wikipedia.org/wiki/John_Deacon</a></small></p>
                             </div>
                         </div>
                     </div>
@@ -120,21 +156,40 @@
                 <!--Roger Taylor card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <a data-toggle="modal" data-target="#rogerModal"><img class="card-img-top img-fluid" src="assets/images/members/roger-taylor.png" alt="Card image cap"></a>
-                        <div class="card-body align-center">
-                            <h5 class="card-title">Roger Taylor</h5>
-                            <p class="card-text">Drums Guitar Keyboard Vocals</p>
-                            <p class="card-text"><small class="text-muted">1970 - Present</small></p>
-                        </div>
+                        <a class="align-center" data-toggle="modal" data-target="#rogerModal">
+                            <img class="card-img-top img-fluid" src="assets/images/members/roger-taylor.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Roger Taylor</h5>
+                                <p class="card-text">Drums Guitar Keyboard Vocals</p>
+                                <p class="card-text"><small class="text-muted">1970 - Present</small></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Roger Taylor modal -->
-                <div class="modal fade" id="rogerModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal fade" id="rogerModal" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLongTitle">Roger Taylor</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                                <img class="img-fluid" src="assets/images/members/roger-taylor.png" alt="Image unavailable">
+                                <img class="img-fluid pb-2" src="assets/images/members/roger-taylor.png" alt="Image unavailable">
+                                <p>Roger Meddows Taylor (born 26 July 1949) is an English musician, singer, songwriter, and multi-instrumentalist, best known as the drummer for the rock band Queen.</p>
+                                <p>As a drummer, Taylor was recognised early in his career for his unique sound. He was voted by radio listeners as the eighth-greatest drummer in classic rock music history in a poll conducted by Planet Rock in 2005.</p>
+                                <p>As a songwriter, Taylor contributed songs to Queen's albums from the beginning, composing at least one track on every album, and often singing lead vocals on his own compositions. He wrote or co-wrote three UK number 1s
+                                    ("These Are the Days of Our Lives", "Innuendo" and "Under Pressure") and contributed a further five major hits ("Radio Ga Ga", "A Kind of Magic", "Heaven for Everyone", "Breakthru", and "The Invisible Man"). He is also
+                                    the main writer on the international top-ten hit "One Vision", although the track is credited to the whole band.</p>
+                                <p>He has collaborated with such artists as Eric Clapton, Roger Waters, Roger Daltrey, Robert Plant, Phil Collins, Genesis, Jimmy Nail, Elton John, Gary Numan, Shakin' Stevens, Foo Fighters, Al Stewart, Steve Vai, Yoshiki,
+                                    Cyndi Almouzni, and Bon Jovi. As a producer, he has produced albums by Virginia Wolf, Jimmy Nail and Magnum.</p>
+                                <p>In addition to his drum work, Taylor is also well known for his falsetto vocal range. He sometimes played keyboards, guitars and bass on his own songs. During the 1980s, in addition to his work with Queen, he formed a parallel
+                                    band known as the Cross, in which he was the lead singer and rhythm guitarist.</p>
+                                <p>During the early 1980s, Taylor was also a panellist on the popular UK quiz show Pop Quiz, hosted by Mike Read. In 2014, he appeared in The Life of Rock with Brian Pern as himself.</p>
+                                <p class="text-muted"><small>Source: <a>https://en.wikipedia.org/wiki/Roger_Taylor_(Queen_drummer)</a></small></p>
                             </div>
                         </div>
                     </div>
@@ -143,21 +198,44 @@
                 <!--Brian May card-->
                 <div class="col-md-6 col-xl-3 d-flex align-items-stretch">
                     <div class="card">
-                        <a data-toggle="modal" data-target="#brianModal"><img class="card-img-top img-fluid" src="assets/images/members/brian-may.png" alt="Card image cap"></a>
-                        <div class="card-body align-center">
-                            <h5 class="card-title">Brian May</h5>
-                            <p class="card-text">Guitar Keyboard Vocals</p>
-                            <p class="card-text"><small class="text-muted">1970 - Present</small></p>
-                        </div>
+                        <a class="align-center" data-toggle="modal" data-target="#brianModal">
+                            <img class="card-img-top img-fluid" src="assets/images/members/brian-may.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Brian May</h5>
+                                <p class="card-text">Guitar Keyboard Vocals</p>
+                                <p class="card-text"><small class="text-muted">1970 - Present</small></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Brian May modal -->
-                <div class="modal fade" id="brianModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal fade" id="brianModal" tabindex="-1" role="dialog" aria-labelledby="modalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
                         <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLongTitle">Brian May</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                                <img class="img-fluid" src="assets/images/members/brian-may.png" alt="Image unavailable">
+                                <img class="img-fluid pb-2" src="assets/images/members/brian-may.png" alt="Image unavailable">
+                                <p>Brian Harold May, CBE (born 19 July 1947) is an English musician, singer, songwriter and astrophysicist. He is the lead guitarist of the rock band Queen. His songs include "We Will Rock You", "Tie Your Mother Down", "I
+                                    Want It All", "Fat Bottomed Girls", "Flash", "Hammer to Fall", "Save Me", "Who Wants to Live Forever" and "The Show Must Go On".</p>
+                                <p>May was a co-founder of Queen with lead singer Freddie Mercury and drummer Roger Taylor, having previously performed with Taylor in the band Smile, which he had joined while he was at university. Within five years of their
+                                    formation in 1970 and the recruitment of bass player John Deacon completing the lineup, Queen had become one of the biggest rock bands in the world with the success of the album A Night at the Opera and its single "Bohemian
+                                    Rhapsody". From the mid-1970s until the early 1990s, Queen were an almost constant presence in the UK charts and played some of the biggest venues in the world, most notably giving an acclaimed performance at Live Aid
+                                    in 1985. As a member of Queen, May became regarded as a virtuoso musician and he was identified with a distinctive sound created through his layered guitar work, often using a home-built electric guitar called the Red
+                                    Special.
+                                </p>
+                                <p>Following the death of Mercury in 1991, Queen were put on hiatus for several years but were eventually reconvened by May and Taylor for further performances featuring other vocalists. In 2005, a Planet Rock poll saw May
+                                    voted the seventh greatest guitarist of all time. He was ranked at No. 26 on Rolling Stone's list of the "100 Greatest Guitarists of All Time". In 2012, he was ranked the second greatest guitarist in a Guitar World
+                                    magazine readers poll. In 2001, he was inducted into the Rock and Roll Hall of Fame as a member of Queen and in 2018 the band received the Grammy Lifetime Achievement Award.</p>
+                                <p>May was appointed a CBE by Queen Elizabeth II in 2005 for "services to the music industry and for charity work". May earned a PhD in astrophysics from Imperial College London in 2007, and was Chancellor of Liverpool John
+                                    Moores University from 2008 to 2013. He was a "science team collaborator" with NASA's New Horizons Pluto mission. He is also a co-founder of the awareness campaign Asteroid Day. Asteroid 52665 Brianmay was named after
+                                    him. May is also an animal rights activist, campaigning against the hunting of foxes and the culling of badgers in the UK.</p>
+                                <p class="text-muted"><small>Source: <a>https://en.wikipedia.org/wiki/Brian_May</a></small></p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +244,6 @@
         </div>
     </section>
     <!-- /.Band Members Section-->
-
 
     <!--Photos Section-->
     <section id="photos" class="container-fluid photo-container">
@@ -221,7 +298,6 @@
         </div>
     </section>
     <!-- /.Photos Section-->
-
 
     <!--Videos Section-->
     <section id="videos" class="container-fluid video-container">
@@ -387,7 +463,6 @@
     </section>
     <!-- /.Videos Section-->
 
-
     <!--Music Section-->
     <section id="music" class="container-fluid music-container">
         <h3 class="uppercase text-outline"><i class="fa fa-headphones"></i>Music</h3>
@@ -417,7 +492,6 @@
     </section>
     <!-- /.Music Section-->
 
-
     <!--Trailer Section-->
     <section id="trailer" class="container-fluid m-0 p-0">
         <h3 class="uppercase trailerHeading text-outline"><i class="fa fa-film"></i>Bohemian Rhapsody</h3>
@@ -425,47 +499,96 @@
     </section>
     <!-- /.Movie Section-->
 
-
     <!--Store Section-->
-    <section id="store">
+    <section id="store" class="container-fluid store-container">
         <h3 class="uppercase text-outline"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3>
-        <div class="container bg-white">
-            <div class="row">
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href="https://www.amazon.co.uk/Queen-Flash-white-official-Boxed/dp/B00LEWU1R0/ref=sr_1_3?keywords=queen&qid=1563983715&refinements=p_89%3AQueen&rnid=1632651031&s=kitchen&sr=1-3" target="_blank">
-                        <img class="d-block img-fluid m-auto center-content" src="assets/images/merch/flash-mug.png">
-                    </a>
-                </div>
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href="https://www.amazon.co.uk/Keychain-Freddie-Mercury-Keyring-Antique/dp/B07PVSJ5VC/ref=sr_1_10?keywords=queen+band&qid=1563985298&s=clothing&sr=1-10" target="_blank">
-                      <img class="d-block img-fluid m-auto" src="assets/images/merch/keyring.png">
-                    </a>
-                </div>
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href=https://www.amazon.co.uk/GSEGSEG-Doormat-Apartment-Doormats-Absorbant/dp/B07SG2XM89/ref=sr_1_6?keywords=queen+band&qid=1563985137&s=kitchen&sr=1-6 "" target="_blank">
-                      <img class="d-block img-fluid m-auto center-content" src="assets/images/merch/mat.png">
-                    </a>
-                </div>
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href="https://www.amazon.co.uk/Freddie-Mercury-Official-Monochrome-T-shirt/dp/B07RX8D5JN/ref=sr_1_37?keywords=queen+t-shirt&qid=1563984938&s=gateway&sr=8-37" target="_blank">
-                        <img class="d-block img-fluid m-auto" src="assets/images/merch/freddie-tshirt.png">
-                    </a>
-                </div>
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href="https://www.amazon.co.uk/Miniwin-Freddie-Mercury-Pillowcase-Picture/dp/B00MYWRC5I/ref=sr_1_3?keywords=queen+band&qid=1563985137&s=kitchen&sr=1-3" target="_blank">
-                        <img class="d-block img-fluid m-auto center-content" src="assets/images/merch/pillow-case.png">
-                    </a>
-                </div>
-                <div class="col col-sm-6 col-lg-4 border">
-                    <a href="https://www.amazon.co.uk/Mama-Ooh-Freddie-Shopping-Reusable/dp/B07PPHHGJS/ref=sr_1_16?crid=1X8QKB6V74VQ4&keywords=queen+band+gifts&qid=1563986792&s=gateway&sprefix=queen+band+%2Caps%2C145&sr=8-16" target="_blank">
-                       <img class="d-block img-fluid m-auto" src="assets/images/merch/bag.png">
-                    </a>
+
+        <div class="container">
+            <div class="card-deck">
+                <div class="row no-gutters">
+
+                    <!--T-shirt card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://rhapsodytourshop.com/product/X9CTQN01/queen-crest-raglan?cp=105697_105824" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/baseball-t.png" alt="Queen T-Shirt">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">Queen Baseball T-Shirt</h5>
+                                    <p class="card-text">$60.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Book card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://www.queenonlinestore.com/Queen/*/The-Treasures-of-Queen/65JA00000YT" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/book.png" alt="The Treasures of Queen">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">The Treasures of Queen</h5>
+                                    <p class="card-text">$24.99</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                   <!--Candle card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://rhapsodytourshop.com/product/X9AMQN05/rhapsody-tour-candle?cp=105697_105825" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/candle.png" alt="Rhapsody Tour Candle">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">Rhapsody Tour Candle</h5>
+                                    <p class="card-text">$40.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--DVD card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://www.queenonlinestore.com/Queen/*/Bohemian-Rhapsody-The-Movie-DVD/61EV00000YT" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/dvd.png" alt="Bohemian Rhapsody The Movie DVD">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">Bohemian Rhapsody The Movie DVD</h5>
+                                    <p class="card-text">$13.99</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Flash Mug card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://www.queenonlinestore.com/Queen/*/Queen-Flash-Mug/35X400000YT" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/flash-mug.png" alt="Flash Gordan Mug">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">Flash Gordan Mug</h5>
+                                    <p class="card-text">$14.99</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--Freddie Statue card-->
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+                        <div class="card">
+                            <a href="https://www.queenonlinestore.com/Queen/*/Freddie-Mercury-Montreux-The-Statue/2JAA00000YT" target="_blank">
+                                <img class="card-img-top img-fluid vidImage" src="assets/images/store/statue.png" alt="Freddie Mercurey - Montreux The Statue">
+                                <div class="card-body align-center">
+                                    <h5 class="card-title">Freddie Mercurey - Montreux The Statue</h5>
+                                    <p class="card-text">$70.00</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /.Merchandise Shop Section-->
-
+    <!-- /.Store Section-->
 
     <!--Fan Club Signup Section-->
     <section id="fan-club" class="container-fluid fan-club-container">
@@ -482,7 +605,7 @@
                         </div>
                         <div class="form-check pt-2">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#">Terms and Conditions</a></label>
+                            <label class="form-check-label" for="exampleCheck1">I agree to the <a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></label>
                         </div>
                         <div class="pt-2">
                             <button type="submit" class="btn my-btn text-outline">Submit</button>
@@ -491,12 +614,8 @@
                 </div>
             </div>
         </div>
-
-
-
     </section>
     <!-- /.Fan Club Signup Section-->
-
 
     <!--Footer-->
     <footer id="footer" class="container-fluid footer-container">
@@ -575,7 +694,6 @@
         </div>
     </footer>
     <!-- /.Footer-->
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
