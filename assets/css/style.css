@@ -9,11 +9,62 @@
 /*-------------------- Background Color*/
 
 .nav-bg-color {
-    background-color: rgba(236, 236, 236, .5);
+    background-color: rgba(226, 104, 205, 0.25)
+}
+
+.bg-fade-light {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-fade-dark {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
+/*-------------------- Overlays*/
 
+.overlay-light-photos {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 104, 205, 0.1);
+}
+
+.overlay-light {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 104, 205, 0.1);
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.overlay-light:hover {
+    background-color: rgba(236, 104, 205, 0.3);
+}
+
+.overlay-dark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(236, 104, 205, 0.2);
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.overlay-dark:hover {
+    background-color: rgba(236, 104, 205, 0.3);
+}
 
 
 /*-------------------- General*/
@@ -44,7 +95,7 @@ h1 {
     margin: 0;
     font-weight: 700;
     font-size: 5rem;
-    text-align: left;
+    text-align: right;
     color: #fafafa;
 }
 
@@ -126,7 +177,12 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
-
+.section-column {
+    /*Source: Code Institutes front end resume project*/
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
 
 
 
@@ -252,11 +308,180 @@ a:hover {
 }
 
 
+/*-------------------- Navigation Section*/
+
+#navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container {
+    height: 50vh;
+}
+
+.nav-container span {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.home-nav {
+    background: url(../images/background/header.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.members-nav {
+    background: url(../images/navigation/members-nav.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gallery-nav {
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    animation-name: gallery-pics;
+    animation-direction: alternate;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes gallery-pics {
+    0% {
+        background-image: url("../images/photos/slide-one.png");
+    }
+    14% {
+        background-image: url("../images/photos/slide-two.png");
+    }
+    29% {
+        background-image: url("../images/photos/slide-three.png");
+    }
+    43% {
+        background-image: url("../images/photos/slide-four.png");
+    }
+    58% {
+        background-image: url("../images/photos/slide-five.png");
+    }
+    72% {
+        background-image: url("../images/photos/slide-six.png");
+    }
+    86% {
+        background-image: url("../images/photos/slide-seven.png");
+    }
+    100% {
+        background-image: url("../images/photos/slide-eight.png");
+    }
+}
+
+.music-nav {
+    background: url(../images/navigation/albums.png) no-repeat, center, center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.film-nav {
+    background: url(../images/navigation/film.png) no-repeat, center, center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#store {
+    background-color: #ffffff;
+}
+
+.store-nav {
+    background: no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+    animation-name: store-pics;
+    animation-direction: alternate;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes store-pics {
+    0% {
+        background-image: url("../images/store/3d-queen.png");
+    }
+    9% {
+        background-image: url("../images/store/baseball-t.png");
+    }
+    18% {
+        background-image: url("../images/store/blu-ray.png");
+    }
+    27% {
+        background-image: url("../images/store/book.png");
+    }
+    36% {
+        background-image: url("../images/store/candle.png");
+    }
+    45% {
+        background-image: url("../images/store/dvd.png");
+    }
+    55% {
+        background-image: url("../images/store/flash-mug.png");
+    }
+    64% {
+        background-image: url("../images/store/jazz-bag.png");
+    }
+    73% {
+        background-image: url("../images/store/jazz-jumper.png");
+    }
+    82% {
+        background-image: url("../images/store/mercury-mug.png");
+    }
+    91% {
+        background-image: url("../images/store/movie-book.png");
+    }
+    100% {
+        background-image: url("../images/store/statue.png");
+    }
+}
+
+.sign-up-nav {
+    background: url(../images/navigation/sign-up.png) no-repeat, center, center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 
 /*-------------------- Members Section*/
 
+#members {
+    padding: 0;
+    margin: 0;
+}
+
 .members-container {
-    background: url(../images/background/red-smoke.png) no-repeat center center fixed;
+    background-color: #e268cd;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -264,37 +489,44 @@ a:hover {
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
-.card-deck .card {
-    width: 100%;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 1rem;
+/*Source: Code Institutes front end resume project*/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+    /* No other items can appear if either side, in case floats are being used */
 }
 
-.card-deck .card .img-fluid {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
 }
 
-.card-deck .card:hover {
-    opacity: 0.9;
-}
-
-.modal .img-fluid {
-    width: 100%;
-}
-
-.modal-content {
-    border: 1px solid #000;
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
     color: #fafafa;
-    background-color: #e268cd;
 }
 
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    width: 60%;
+    position: relative;
+    /* Relative to its predecesar*/
+}
 
 /*-------------------- Photos Section*/
 
@@ -318,21 +550,10 @@ a:hover {
     padding: 0;
 }
 
-.opaque-overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 #carouselIndicators .img-fluid {
     max-width: 100vw;
     max-height: 60vh;
 }
-
-
 
 
 /*-------------------- Videos Section*/
@@ -419,8 +640,19 @@ a:hover {
     color: #4a4a4f;
 }
 
-#store .card .card-body:hover {
+#store .card {
+    border: 4px solid #ffffff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#store .card:hover {
     color: #4a4f4f;
+    background-color: #e268cd;
+    border: 4px solid #e268cd;
+    opacity: 0.95;
 }
 
 .store-container {
@@ -430,6 +662,18 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.card-deck .card .img-fluid {
+    border-radius: 1rem;
+}
+
+.card-deck .card {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 1rem;
+}
+
 
 /*-------------------- Fan Club Section*/
 
@@ -513,5 +757,12 @@ footer {
 @media (min-width: 576px) {
     #videos .modal .modal-dialog {
         max-width: 900px;
+    }
+}
+
+@media (min-width: 960px) {
+    .info-container {
+        max-height: 45vh;
+        overflow: hidden;
     }
 }
