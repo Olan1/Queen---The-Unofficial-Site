@@ -13,15 +13,24 @@
     <title>Gallery</title>
 </head>
 
-<body>
+<body class="gallery-container">
     <!--Header-->
-    <div id="home" class="container-fluid header-container text-outline">
+    <div id="home" class="container-fluid text-outline">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
 
-            <a href="index.html" class="navbar-brand">
+            <a href="index.html" class="navbar-brand" data-toggle="tooltip" title="Home">
                 <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png">
                 <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png">
             </a>
+
+            <ul class="nav justify-content-center fixed-top">
+                <li class="nav-item">
+                    <a class="nav-link gallery-nav-link uppercase" href="#photos">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link gallery-nav-link uppercase" href="#videos">Videos</a>
+                </li>
+            </ul>
 
             <button class="navbar-toggler ml-auto mr-2 text-outline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
@@ -55,10 +64,10 @@
     <!-- /.Header -->
 
     <!--Photos Section-->
-    <section id="photos" class="container-fluid photo-container">
-        <div class="container-fluid overlay-light-photos">
+    <section id="photos" class="container-fluid">
+        <div class="container-fluid">
 
-            <h3 class="uppercase text-outline"><i class="fa fa-camera-retro"></i>Photos</h3>
+            <h3 class="uppercase text-outline"><i class="fa fa-camera-retro"></i></h3>
 
             <!--Code source: https://getbootstrap.com/docs/4.0/components/carousel/ -->
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -96,9 +105,11 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -107,9 +118,9 @@
     <!-- /.Photos Section-->
 
     <!--Videos Section-->
-    <section id="videos" class="container-fluid video-container">
+    <section id="videos" class="container-fluid">
 
-        <h3 class="uppercase text-outline"><i class="fa fa-film"></i>Videos</h3>
+        <h3 class="uppercase text-outline"><i class="fa fa-film"></i></h3>
 
         <div class="container">
             <div class="card-deck">
@@ -272,8 +283,7 @@
 
     <!--Footer-->
     <footer id="footer" class="container-fluid footer-container">
-        <div class="row pt-5 footer-bg-color">
-
+        <div class="row pt-5">
             <!--Form-->
             <div class="col-sm-4 align-center pb-2 text-outline">
                 <h5 class="uppercase text-white pb-4">Get Queen Updates</h5>
@@ -288,7 +298,7 @@
 
             <!--Logo-->
             <div class="col-sm-4 align-center pb-2">
-                <a href="index.html">
+                <a href="#home" data-toggle="tooltip" title="Top">
                     <img class="img-fluid footer-logo" src="assets/images/footer/queen-full-logo.png" alt="image unavailable">
                 </a>
                 <hr class="divider d-sm-none">

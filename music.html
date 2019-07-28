@@ -13,12 +13,12 @@
     <title>Music</title>
 </head>
 
-<body>
+<body class="music-container">
     <!--Header-->
-    <div id="home" class="container-fluid header-container text-outline">
+    <div id="home" class="container-fluid text-outline">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
 
-            <a href="index.html" class="navbar-brand">
+            <a href="index.html" class="navbar-brand" data-toggle="tooltip" title="Home">
                 <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png">
                 <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png">
             </a>
@@ -55,7 +55,7 @@
     <!-- /.Header -->
 
     <!--Music Section-->
-    <section id="music" class="container-fluid music-container">
+    <section id="music" class="container-fluid">
         <h3 class="uppercase text-outline"><i class="fa fa-headphones"></i>Music</h3>
         <div class="container pb-2">
             <div class="row">
@@ -85,8 +85,7 @@
 
     <!--Footer-->
     <footer id="footer" class="container-fluid footer-container">
-        <div class="row pt-5 footer-bg-color">
-
+        <div class="row pt-5">
             <!--Form-->
             <div class="col-sm-4 align-center pb-2 text-outline">
                 <h5 class="uppercase text-white pb-4">Get Queen Updates</h5>
@@ -101,7 +100,7 @@
 
             <!--Logo-->
             <div class="col-sm-4 align-center pb-2">
-                <a href="index.html">
+                <a href="#home" data-toggle="tooltip" title="Top">
                     <img class="img-fluid footer-logo" src="assets/images/footer/queen-full-logo.png" alt="image unavailable">
                 </a>
                 <hr class="divider d-sm-none">

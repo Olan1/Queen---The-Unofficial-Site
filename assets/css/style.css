@@ -27,7 +27,7 @@
     position: relative;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(236, 104, 205, 0.1);
 }
@@ -64,6 +64,23 @@
 
 .overlay-dark:hover {
     background-color: rgba(236, 104, 205, 0.3);
+}
+
+.overlay-focus {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.overlay-focus:hover {
+    background-color: rgba(236, 104, 205, 0.1);
 }
 
 
@@ -108,7 +125,8 @@ h2 {
     color: #fafafa;
 }
 
-h3 {
+h3,
+h4 {
     font-family: 'Cormorant Garamond', sans-serif;
     margin: 0;
     color: #fafafa;
@@ -177,13 +195,6 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
-.section-column {
-    /*Source: Code Institutes front end resume project*/
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-
 
 
 /*-------------------- Header / Navbar*/
@@ -200,7 +211,7 @@ a:hover {
     letter-spacing: 8px;
 }
 
-.header-container {
+.home-header-container {
     background: url(../images/background/header.png) no-repeat 60% center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -399,7 +410,7 @@ a:hover {
     background-size: cover;
 }
 
-#store {
+#store-nav {
     background-color: #ffffff;
 }
 
@@ -480,6 +491,16 @@ a:hover {
     margin: 0;
 }
 
+.members-header-container {
+    background: url(../images/navigation/members-nav.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 100vh;
+    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+}
+
 .members-container {
     background-color: #e268cd;
     -webkit-background-size: cover;
@@ -487,14 +508,23 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+    text-align: right;
 }
 
 /*Source: Code Institutes front end resume project*/
+
+.section-column {
+    /*Source: Code Institutes front end resume project*/
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
 
 .personal-info-item {
     margin-bottom: 20px;
     display: block;
     clear: both;
+    padding: 15px;
     /* No other items can appear if either side, in case floats are being used */
 }
 
@@ -502,6 +532,7 @@ a:hover {
 .personal-info-item .value {
     padding-right: 8px;
     display: inline-block;
+    text-align: left;
 }
 
 .personal-info-item .key p,
@@ -528,59 +559,78 @@ a:hover {
     /* Relative to its predecesar*/
 }
 
-/*-------------------- Photos Section*/
+/*-------------------- Gallery Section*/
 
-.photo-container {
+.gallery-container {
     background: url(../images/background/crowd.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 100vh;
 }
 
-.carousel {
-    padding-top: 20px;
-    position: absolute;
-    top: 25vh;
-    left: 50%;
-    transform: translate(-50%);
+.gallery-nav-link {
+    color: #fafafa;
+    font-weight: 500;
+    letter-spacing: 8px;
+    transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
 }
+
+.gallery-nav-link:hover,
+.gallery-nav-link:focus {
+    color: #fafaff;
+    transform: scale(1.2);
+}
+
+.nav {
+    width: 40vw;
+    padding-top: 20px;
+    margin: auto;
+}
+
+/*-------------------- Photos/ Videos Section*/
 
 #photos {
-    padding: 0;
+    padding: 15px 0;
 }
 
-#carouselIndicators .img-fluid {
-    max-width: 100vw;
-    max-height: 60vh;
+#photos .fa-camera-retro,
+#videos .fa-film {
+    padding: 60px 0 20px 0;
 }
 
-
-/*-------------------- Videos Section*/
-
-.video-container {
-    background: url(../images/background/purple-smoke.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#carouselIndicators {
+    padding-top: 100px;
 }
+
+#videos {
+    padding: 15px 0;
+}
+
 
 .vidImage+.fa-youtube-play {
     margin: 0;
     padding: 0;
     font-size: 32px;
-    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ff0000;
+    color: transparent;
+    display: block;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .vidImage:hover+.fa-youtube-play,
 .vidImage+.fa-youtube-play:hover {
-    display: block;
+    color: #ff0000;
 }
 
 #videos .modal-content,
@@ -605,6 +655,7 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 100vh;
 }
 
 
@@ -612,6 +663,15 @@ a:hover {
 
 
 /*-------------------- Movie Trailer Section*/
+
+.film-container {
+    background: url(../images/navigation/film.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100vh;
+}
 
 #trailer {
     padding: 0;
@@ -632,8 +692,37 @@ a:hover {
     width: 100%;
 }
 
+#film-store .card .card-body {
+    width: 100%;
+    color: #4a4a4f;
+}
+
+#film-store .card {
+    border: 4px solid #ffffff;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#film-store .card:hover {
+    color: #4a4f4f;
+    background-color: #e268cd;
+    border: 4px solid #e268cd;
+    opacity: 0.95;
+}
+
 
 /*-------------------- Store Section*/
+
+.store-container {
+    background: url(../images/background/pose.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100vh;
+}
 
 #store .card .card-body {
     width: 100%;
@@ -655,14 +744,6 @@ a:hover {
     opacity: 0.95;
 }
 
-.store-container {
-    background: url(../images/background/pose.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .card-deck .card .img-fluid {
     border-radius: 1rem;
 }
@@ -678,7 +759,7 @@ a:hover {
 /*-------------------- Fan Club Section*/
 
 .fan-club-container {
-    background: url(../images/background/yellow-smoke.png) no-repeat center 75%;
+    background: url(../images/background/purple-smoke.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
