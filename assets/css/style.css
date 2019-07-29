@@ -1,12 +1,9 @@
-/*-------------------- Fonts*/
+/*-------------------------------------------------- Fonts*/
 
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap:100,200,300,400,500,600,700');
 
-
-
-
-
-/*-------------------- Background Color*/
+/*-------------------------------------------------- Background*/
 
 .nav-bg-color {
     background-color: rgba(92, 52, 138, 0.25);
@@ -20,17 +17,15 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-/*-------------------- Overlays*/
-
-.overlay-light-photos {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(92, 52, 138, 0.1);
+.cloud-bg {
+    background: url(../images/gallery/purple-clouds.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+/*-------------------------------------------------- Overlays*/
 
 .overlay-light {
     position: relative;
@@ -83,8 +78,7 @@
     background-color: rgba(92, 52, 138, 0.1);
 }
 
-
-/*-------------------- General*/
+/*-------------------------------------------------- General*/
 
 html {
     scroll-behavior: smooth;
@@ -94,7 +88,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     color: #4a4a4f;
     background-color: rgb(92, 52, 138);
 }
@@ -137,6 +131,11 @@ h4 {
 
 section {
     min-height: 100vh;
+}
+
+header {
+    padding-bottom: 56.25%;
+    /* Aspect Ratio: ( 900 / 1600 ) x 100 = 56.25% - Source: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .align-center {
@@ -188,16 +187,7 @@ a:hover {
     box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
 }
 
-.center-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-/*-------------------- Header / Navbar*/
+/*-------------------------------------------------- Header / Navbar*/
 
 .navbar {
     margin: 0;
@@ -212,7 +202,7 @@ a:hover {
 }
 
 .home-header-container {
-    background: url(../images/background/band-pose.png) no-repeat center center fixed;
+    background: url(../images/header/band-pose.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -245,7 +235,8 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link,
+#dropdownMenuLink {
     color: #fafafa;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
@@ -260,59 +251,7 @@ a:hover {
     transform: scale(1.01);
 }
 
-.dropdown-toggle::after {
-    content: none;
-}
-
-#dropdownMenuLink {
-    color: #fafafa;
-    font-weight: 500;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-#dropdownMenuLink:hover {
-    color: #fafaff;
-    transform: scale(1.01);
-}
-
-.dropdown-menu.show {
-    display: inline-block;
-    background-color: transparent;
-}
-
-.dropdown-menu {
-    max-width: 8rem;
-    text-align: center;
-    background-color: transparent;
-    border: none;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-
-.dropdown-item {
-    color: #fafafa;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: transparent;
-    outline: none;
-    color: #fafaff;
-    transform: scale(1.01);
-}
-
-
-/*-------------------- Navigation Section*/
+/*-------------------------------------------------- Navigation Section*/
 
 #navigation {
     padding: 0;
@@ -329,22 +268,6 @@ a:hover {
     width: 100%;
 }
 
-.home-nav {
-    background: url(../images/background/band-pose.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.members-nav {
-    background: url(../images/navigation/members-nav.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .gallery-nav {
     background: no-repeat center center;
     -webkit-background-size: cover;
@@ -354,49 +277,40 @@ a:hover {
 
     animation-name: gallery-pics;
     animation-direction: alternate;
-    animation-duration: 20s;
+    animation-duration: 40s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-
 @keyframes gallery-pics {
     0% {
-        background-image: url("../images/photos/slide-one.png");
+        background-image: url("../images/gallery/slide-one.png");
     }
     14% {
-        background-image: url("../images/photos/slide-two.png");
+        background-image: url("../images/gallery/slide-two.png");
     }
     29% {
-        background-image: url("../images/photos/slide-three.png");
+        background-image: url("../images/gallery/slide-three.png");
     }
     43% {
-        background-image: url("../images/photos/slide-four.png");
+        background-image: url("../images/gallery/slide-four.png");
     }
     58% {
-        background-image: url("../images/photos/slide-five.png");
+        background-image: url("../images/gallery/slide-five.png");
     }
     72% {
-        background-image: url("../images/photos/slide-six.png");
+        background-image: url("../images/gallery/slide-six.png");
     }
     86% {
-        background-image: url("../images/photos/slide-seven.png");
+        background-image: url("../images/gallery/slide-seven.png");
     }
     100% {
-        background-image: url("../images/photos/slide-eight.png");
+        background-image: url("../images/gallery/slide-eight.png");
     }
-}
-
-.music-nav {
-    background: url(../images/navigation/albums.png) no-repeat, center, center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .film-nav {
-    background: url(../images/navigation/film.png) no-repeat, center, center;
+    background: url(../images/film/film.png) no-repeat, center, center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -420,7 +334,6 @@ a:hover {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-
 
 @keyframes store-pics {
     0% {
@@ -462,7 +375,7 @@ a:hover {
 }
 
 .sign-up-nav {
-    background: url(../images/navigation/sign-up.png) no-repeat, center, center;
+    background: url(../images/sign-up/sign-up.png) no-repeat, center, center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -476,8 +389,7 @@ a:hover {
     transform: translate(-50%);
 }
 
-
-/*-------------------- Members Section*/
+/*-------------------------------------------------- Members Section*/
 
 #members {
     padding: 0;
@@ -485,7 +397,7 @@ a:hover {
 }
 
 .members-header-container {
-    background: url(../images/navigation/members-nav.png) no-repeat center center;
+    background: url(../images/members/members-nav.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -503,10 +415,7 @@ a:hover {
     text-align: right;
 }
 
-/*Source: Code Institutes front end resume project*/
-
 .section-column {
-    /*Source: Code Institutes front end resume project*/
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
@@ -517,7 +426,6 @@ a:hover {
     display: block;
     clear: both;
     padding: 15px;
-    /* No other items can appear if either side, in case floats are being used */
 }
 
 .personal-info-item .key,
@@ -529,6 +437,7 @@ a:hover {
 
 .personal-info-item .key p,
 .personal-info-item .value p {
+    font-size: 1.2rem;
     margin: 0;
     color: #fafafa;
 }
@@ -551,80 +460,27 @@ a:hover {
     /* Relative to its predecesar*/
 }
 
-/*-------------------- Gallery Section*/
+/*-------------------------------------------------- Gallery Section*/
 
-.gallery-container {
-    background: url(../images/background/crowd.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.home-container {
-    background: url(../images/background/crowd.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.gallery-nav-link {
-    color: #fafafa;
-    font-weight: 500;
-    letter-spacing: 8px;
-    transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-}
-
-.gallery-nav-link:hover,
-.gallery-nav-link:focus {
-    color: #fafaff;
-    transform: scale(1.2);
-}
-
-.nav {
-    width: 40vw;
-    padding-top: 20px;
-    margin: auto;
-}
-
-/*-------------------- Photos/ Videos Section*/
-
-#photos {
-    padding: 15px 0;
-}
-
-#photos .fa-camera-retro,
-#videos .fa-film {
-    padding: 60px 0 20px 0;
-}
-
-#carouselIndicators {
-    padding-top: 100px;
-}
-
+#photos,
 #videos {
     padding: 15px 0;
 }
 
-
 .vidImage+.fa-youtube-play {
     margin: 0;
     padding: 0;
-    font-size: 32px;
+    font-size: 64px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: transparent;
     display: block;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
 .vidImage:hover+.fa-youtube-play,
@@ -642,28 +498,20 @@ a:hover {
     padding: 0;
 }
 
-
-
-
-
-/*-------------------- Music Section*/
+/*-------------------------------------------------- Music Section*/
 
 .music-container {
-    background: url(../images/background/stage-pov.png) no-repeat 60% center fixed;
+    background: url(../images/music/albums.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-
-
-
-
-/*-------------------- Movie Trailer Section*/
+/*-------------------------------------------------- Film Section*/
 
 .film-container {
-    background: url(../images/navigation/film.png) no-repeat center center fixed;
+    background: url(../images/film/film.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -689,53 +537,26 @@ a:hover {
     width: 100%;
 }
 
+/*-------------------------------------------------- Store Section*/
+
+#store .card .card-body,
 #film-store .card .card-body {
     width: 100%;
     color: #4a4a4f;
-}
-
-#film-store .card {
-    border: 4px solid #ffffff;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
-#film-store .card:hover {
-    color: #4a4f4f;
-    background-color: rgb(92, 52, 138);
-    border: 4px solid rgb(92, 52, 138);
-    opacity: 0.95;
-}
-
-
-/*-------------------- Store Section*/
-
-.store-container {
-    background: url(../images/background/pose.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#store .card .card-body {
-    width: 100%;
-    color: #4a4a4f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-#store .card:hover .card-body {
+#store .card:hover .card-body,
+#film-store .card:hover .card-body {
     color: #ffffff;
 }
 
-#store .card {
+#store .card,
+#film-store .card {
     border: 4px solid #ffffff;
-    width: 100%;
     color: #4a4a4f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -743,7 +564,8 @@ a:hover {
     -o-transition: all 0.35s ease-in-out;
 }
 
-#store .card:hover {
+#store .card:hover,
+#film-store .card:hover {
     background-color: rgb(92, 52, 138);
     border: 4px solid rgb(92, 52, 138);
     opacity: 0.95;
@@ -760,11 +582,10 @@ a:hover {
     border-radius: 1rem;
 }
 
+/*-------------------------------------------------- Sign Up Section*/
 
-/*-------------------- Fan Club Section*/
-
-.fan-club-container {
-    background: url(../images/background/purple-smoke.png) no-repeat center center fixed;
+.sign-up-container {
+    background: url(../images/sign-up/sign-up.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -785,11 +606,15 @@ a:hover {
     color: #fafafa;
 }
 
+#fan-club a {
+    color: #c7c2c2;
+}
 
+#fan-club a:hover {
+    color: #fafafa;
+}
 
-
-
-/*-------------------- Footer*/
+/*-------------------------------------------------- Footer*/
 
 footer {
     margin: 0;
@@ -797,7 +622,7 @@ footer {
 }
 
 .footer-container {
-    background: url(../images/background/band-pixels.png) no-repeat center center;
+    background: url(../images/footer/band-pixels.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -838,11 +663,7 @@ footer {
     width: 70px;
 }
 
-
-
-
-
-/*-------------------- Media Queries*/
+/*-------------------------------------------------- Media Queries*/
 
 @media (min-width: 576px) {
     #videos .modal .modal-dialog {
