@@ -723,10 +723,20 @@ a:hover {
 #store .card .card-body {
     width: 100%;
     color: #4a4a4f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+#store .card:hover .card-body {
+    color: #ffffff;
 }
 
 #store .card {
     border: 4px solid #ffffff;
+    width: 100%;
+    color: #4a4a4f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -734,7 +744,6 @@ a:hover {
 }
 
 #store .card:hover {
-    color: #4a4f4f;
     background-color: rgb(92, 52, 138);
     border: 4px solid rgb(92, 52, 138);
     opacity: 0.95;
@@ -770,6 +779,10 @@ a:hover {
 .middle {
     position: relative;
     top: 25vh;
+}
+
+.form-check-label {
+    color: #fafafa;
 }
 
 
