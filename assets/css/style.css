@@ -9,7 +9,7 @@
 /*-------------------- Background Color*/
 
 .nav-bg-color {
-    background-color: rgba(226, 104, 205, 0.25)
+    background-color: rgba(92, 52, 138, 0.25);
 }
 
 .bg-fade-light {
@@ -29,7 +29,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(236, 104, 205, 0.1);
+    background-color: rgba(92, 52, 138, 0.1);
 }
 
 .overlay-light {
@@ -38,7 +38,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(236, 104, 205, 0.1);
+    background-color: rgba(92, 52, 138, 0.1);
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -46,7 +46,7 @@
 }
 
 .overlay-light:hover {
-    background-color: rgba(236, 104, 205, 0.3);
+    background-color: rgba(92, 52, 138, 0.3);
 }
 
 .overlay-dark {
@@ -55,7 +55,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(236, 104, 205, 0.2);
+    background-color: rgba(92, 52, 138, 0.2);
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -63,7 +63,7 @@
 }
 
 .overlay-dark:hover {
-    background-color: rgba(236, 104, 205, 0.3);
+    background-color: rgba(92, 52, 138, 0.3);
 }
 
 .overlay-focus {
@@ -80,7 +80,7 @@
 }
 
 .overlay-focus:hover {
-    background-color: rgba(236, 104, 205, 0.1);
+    background-color: rgba(92, 52, 138, 0.1);
 }
 
 
@@ -96,7 +96,7 @@ body {
     padding: 0;
     font-family: 'Exo', sans-serif;
     color: #4a4a4f;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(92, 52, 138);
 }
 
 .text-outline {
@@ -169,7 +169,7 @@ a:hover {
     border: 1px solid #000;
     border-radius: 2rem;
     color: #fafafa;
-    background-color: #e268cd;
+    background-color: rgb(92, 52, 138);
     padding: 5px 15px;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -178,7 +178,7 @@ a:hover {
 }
 
 .my-btn:hover {
-    background-color: #e268fd;
+    background-color: rgb(70, 42, 129);
     color: #fafafa;
     transform: scale(1.1);
     cursor: pointer;
@@ -212,12 +212,11 @@ a:hover {
 }
 
 .home-header-container {
-    background: url(../images/background/header.png) no-repeat 60% center;
+    background: url(../images/background/band-pose.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 100vh;
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
@@ -312,12 +311,6 @@ a:hover {
     transform: scale(1.01);
 }
 
-.heading {
-    position: absolute;
-    top: 25%;
-    left: 7.5%;
-}
-
 
 /*-------------------- Navigation Section*/
 
@@ -337,7 +330,7 @@ a:hover {
 }
 
 .home-nav {
-    background: url(../images/background/header.png) no-repeat center center;
+    background: url(../images/background/band-pose.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -497,12 +490,11 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 100vh;
     /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .members-container {
-    background-color: #e268cd;
+    background-color: rgb(92, 52, 138);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -567,7 +559,14 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 100vh;
+}
+
+.home-container {
+    background: url(../images/background/crowd.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .gallery-nav-link {
@@ -650,12 +649,11 @@ a:hover {
 /*-------------------- Music Section*/
 
 .music-container {
-    background: url(../images/background/band-pose.png) no-repeat center center fixed;
+    background: url(../images/background/stage-pov.png) no-repeat 60% center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 100vh;
 }
 
 
@@ -670,7 +668,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 100vh;
 }
 
 #trailer {
@@ -707,8 +704,8 @@ a:hover {
 
 #film-store .card:hover {
     color: #4a4f4f;
-    background-color: #e268cd;
-    border: 4px solid #e268cd;
+    background-color: rgb(92, 52, 138);
+    border: 4px solid rgb(92, 52, 138);
     opacity: 0.95;
 }
 
@@ -721,7 +718,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 100vh;
 }
 
 #store .card .card-body {
@@ -739,8 +735,8 @@ a:hover {
 
 #store .card:hover {
     color: #4a4f4f;
-    background-color: #e268cd;
-    border: 4px solid #e268cd;
+    background-color: rgb(92, 52, 138);
+    border: 4px solid rgb(92, 52, 138);
     opacity: 0.95;
 }
 
@@ -809,7 +805,7 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background-color: #e268cd;
+    background-color: rgb(92, 52, 138);
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -817,7 +813,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e268fd;
+    background-color: rgb(70, 42, 129);
     transform: scale(1.1);
 }
 
