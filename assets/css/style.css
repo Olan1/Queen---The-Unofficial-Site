@@ -40,10 +40,6 @@
     -o-transition: all 0.2s ease-in-out;
 }
 
-.overlay-light:hover {
-    background-color: rgba(92, 52, 138, 0.5);
-}
-
 .overlay-dark {
     position: relative;
     top: 0;
@@ -57,25 +53,8 @@
     -o-transition: all 0.2s ease-in-out;
 }
 
-.overlay-dark:hover {
-    background-color: rgba(92, 52, 138, 0.5);
-}
-
-.overlay-focus {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-}
-
-.overlay-focus:hover {
-    background-color: rgba(92, 52, 138, 0.5);
+.hvr-sweep-to-bottom:before {
+    background: rgba(92, 52, 138, 0.5);
 }
 
 /*-------------------------------------------------- General*/
@@ -307,6 +286,14 @@ a:hover {
     100% {
         background-image: url("../images/gallery/slide-eight.png");
     }
+}
+
+.music-nav {
+    background: url(../images/music/albums.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .film-nav {
@@ -627,7 +614,7 @@ footer {
     padding: 20px;
 }
 
-footer h5{
+footer h5 {
     font-size: 2rem;
 }
 
