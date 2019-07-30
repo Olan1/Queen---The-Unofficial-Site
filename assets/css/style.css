@@ -6,7 +6,7 @@
 /*-------------------------------------------------- Background*/
 
 .nav-bg-color {
-    background-color: rgba(92, 52, 138, 0.9);
+    background-color: rgb(92, 52, 138);
 }
 
 .bg-fade-light {
@@ -41,7 +41,7 @@
 }
 
 .overlay-light:hover {
-    background-color: rgba(92, 52, 138, 0.3);
+    background-color: rgba(92, 52, 138, 0.5);
 }
 
 .overlay-dark {
@@ -58,7 +58,7 @@
 }
 
 .overlay-dark:hover {
-    background-color: rgba(92, 52, 138, 0.3);
+    background-color: rgba(92, 52, 138, 0.5);
 }
 
 .overlay-focus {
@@ -75,7 +75,7 @@
 }
 
 .overlay-focus:hover {
-    background-color: rgba(92, 52, 138, 0.1);
+    background-color: rgba(92, 52, 138, 0.5);
 }
 
 /*-------------------------------------------------- General*/
@@ -91,6 +91,7 @@ body {
     font-family: 'Exo 2', sans-serif;
     color: #4a4a4f;
     background-color: rgb(92, 52, 138);
+    padding-top: 100px;
 }
 
 .text-outline {
@@ -185,10 +186,6 @@ a:hover {
 
 .my-btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
-}
-
-.padding-top {
-    padding-top: 76px;
 }
 
 /*-------------------------------------------------- Header / Navbar*/
