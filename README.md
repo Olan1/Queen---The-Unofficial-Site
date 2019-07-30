@@ -43,9 +43,10 @@
 
 <h3>Content</h3>
 <p>All content in the members description section was sourced from the <a href="http://www.queenonline.com/" target="_blank">Official Queen website</a>.</p>
+<p>All content in the terms and conditions section was sourced from the Official Queen website <a href="http://www.queenonline.com/privacy_policy" target="_blank">privacy policy</a>.</p>
 
 <h3>Media</h3>
-<p>All image were taken from the <a href="http://www.queenonline.com/" target="_blank">Official Queen website</a>, <a href="https://cloudsfactory.net/queen-rock-band.html" target="_blank">cloudsfactory</a>, <a href="https://ultimateclassicrock.com/queen-albums-worst-to-best/" target="_blank">Ultimate Rock Classic</a>, and <a href="https://medium.com/one-reel-at-a-time/film-review-bohemian-rhapsody-5d4032f7fd79" target="_blank">Medium</a>.</p>
+<p>All image were taken from the <a href="http://www.queenonline.com/" target="_blank">Official Queen website</a>, <a href="https://ultimateclassicrock.com/queen-albums-worst-to-best/" target="_blank">Ultimate Rock Classic</a>, and <a href="https://medium.com/one-reel-at-a-time/film-review-bohemian-rhapsody-5d4032f7fd79" target="_blank">Medium</a>.</p>
 <p>All videos were taken from <a href="https://www.youtube.com/" target=_blank>YouTube</a>.
 <p>All songs were taken from <a href="https://www.spotify.com/ie/" target=_blank>Spotify</a>.
 

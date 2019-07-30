@@ -603,8 +603,9 @@ a:hover {
     color: #fafafa;
 }
 
+
 #fan-club a {
-    color: #c7c2c2;
+    color: #a45df5;
 }
 
 #fan-club a:hover {
@@ -615,7 +616,7 @@ a:hover {
 
 footer {
     margin: 0;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 footer h5 {
@@ -623,11 +624,7 @@ footer h5 {
 }
 
 .footer-container {
-    background: url(../images/footer/band-pixels.png) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #9f9ea3;
 }
 
 .social-links {
