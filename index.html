@@ -16,9 +16,7 @@
 
 <body>
     <!--Home-->
-    <div>
-        <span class="overlay-focus"><h3 class="uppercase text-outline"><i class="fa fa-home" aria-hidden="true"></i>Home</h3></span>
-    </div>
+
     <!--Header-->
     <header id="home" class="container-fluid home-header-container text-outline header">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
@@ -26,6 +24,9 @@
                 <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png">
                 <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png">
             </a>
+            <div class="margin-auto">
+                <h3 class="page-header uppercase text-outline"><i class="fa fa-home" aria-hidden="true"></i>Home</h3>
+            </div>
             <button class="navbar-toggler ml-auto mr-2 text-outline" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -51,14 +52,14 @@
             <!--Members-->
             <div class="col-lg-6 nav-container">
                 <a href="members.html" data-toggle="tooltip" title="Members">
-                    <span class="members-header-container"><span class="hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3></span></span>
+                    <span class="members-header-container"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3></span></span>
                 </a>
             </div>
 
             <!--Gallery-->
             <div class="col-lg-6 nav-container">
                 <a href="gallery.html" data-toggle="tooltip" title="Gallery">
-                    <span class="gallery-nav"><span class="hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-camera-retro"></i>Gallery</h3></span></span>
+                    <span class="gallery-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-camera-retro"></i>Gallery</h3></span></span>
                 </a>
             </div>
         </div>
@@ -67,14 +68,14 @@
             <!--Music-->
             <div class="col-lg-6 nav-container">
                 <a href="music.html" data-toggle="tooltip" title="Music">
-                    <span class="music-nav"><span class="hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-headphones"></i>Music</h3></span></span>
+                    <span class="music-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-headphones"></i>Music</h3></span></span>
                 </a>
             </div>
 
             <!--Film-->
             <div class="col-lg-6 nav-container">
                 <a href="film.html" data-toggle="tooltip" title="Film">
-                    <span class="film-nav"><span class="hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-film"></i>Film</h3></span></span>
+                    <span class="film-container"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-film"></i>Film</h3></span></span>
                 </a>
             </div>
         </div>
@@ -83,14 +84,14 @@
             <!--Store-->
             <div id="store-nav" class="col-lg-6 nav-container">
                 <a href="store.html" data-toggle="tooltip" title="Store">
-                    <span class="store-nav"><span class="overlay-dark hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3></span></span>
+                    <span class="store-nav"><span class="overlay-dark hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3></span></span>
                 </a>
             </div>
 
             <!--Sign Up-->
             <div class="col-lg-6 nav-container">
                 <a href="sign-up.html" data-toggle="tooltip" title="Sign Up">
-                    <span class="sign-up-nav"><span class="hvr-sweep-to-bottom"><h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o"></i>Join Us</h3></span></span>
+                    <span class="sign-up-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline"><i class="fa fa-hand-rock-o"></i>Join Us</h3></span></span>
                 </a>
             </div>
         </div>
@@ -99,7 +100,7 @@
             <!--Back to top-->
             <div class="col-12 nav-container">
                 <a href="#home" data-toggle="tooltip" title="Top">
-                    <span class="back-to-top-nav overlay-light hvr-sweep-to-bottom"><span class="top-logo"><h3 class="uppercase text-outline"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i>Back To Top</h3></span></span>
+                    <span class="back-to-top-nav overlay-light hvr-shutter-out-vertical"><span class="top-logo"><h3 class="uppercase text-outline"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i>Back To Top</h3></span></span>
                 </a>
             </div>
         </div>
@@ -115,7 +116,7 @@
                 <h5 class="uppercase text-white pb-4">Get Queen Updates</h5>
                 <form class="form-sm justify-content-center inline-block">
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-sm" id="emailUpdates" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control form-control-sm" id="emailUpdates" aria-describedby="emailHelp" placeholder="Email" required>
                     </div>
                     <button type="submit" class="btn my-btn text-outline">Submit</button>
                 </form>

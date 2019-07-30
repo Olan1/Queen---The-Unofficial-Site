@@ -53,8 +53,12 @@
     -o-transition: all 0.2s ease-in-out;
 }
 
-.hvr-sweep-to-bottom:before {
-    background: rgba(92, 52, 138, 0.5);
+.hvr-shutter-out-vertical {
+    background-color: transparent;
+}
+
+.hvr-shutter-out-vertical:before {
+    background-color: rgba(92, 52, 138, 0.3);
 }
 
 /*-------------------------------------------------- General*/
@@ -166,6 +170,17 @@ a:hover {
     box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
 }
 
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.margin-auto {
+    margin: auto;
+}
+
 /*-------------------------------------------------- Header / Navbar*/
 
 .navbar {
@@ -186,7 +201,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .navbar-brand {
@@ -248,7 +262,7 @@ a:hover {
 }
 
 .gallery-nav {
-    background: no-repeat center center;
+    background: url("../images/gallery/slide-one.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -296,20 +310,12 @@ a:hover {
     background-size: cover;
 }
 
-.film-nav {
-    background: url(../images/film/film.png) no-repeat, center, center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 #store-nav {
     background-color: #ffffff;
 }
 
 .store-nav {
-    background: no-repeat center center;
+    background: url("../images/store/3d-queen.png") no-repeat center center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -389,7 +395,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .members-container {
@@ -398,7 +403,6 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*Based on code from Stack Overflow - https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
     text-align: right;
 }
 
@@ -504,7 +508,7 @@ a:hover {
 /*-------------------------------------------------- Film Section*/
 
 .film-container {
-    background: url(../images/film/film.png) no-repeat center center fixed;
+    background: url(../images/film/film.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,59 +1,59 @@
-https://olan1.github.io/milestone-project-1/
-
 <h1>Queen Unnoficial Website</h1>
 
 <p>Stream One Project: User Centric Frontend Development - Code Institute</p>
 <p>This is a website for the rock band Queen. It details all original members, contains photos of both live and staged performances, music videos, the Bohemian Rhapsody film trailer with links to buy the film, a store to buy Queen memorabilia, and a fan club sign up.</p>
 
-<h3>Demo</h3>
-<p>Click <a href="https://olan1.github.io/milestone-project-1/">here</a> for a live demo.</p>
+<h2>Demo</h2>
 
-<h3>UX</h3>
+<p>Click <a href="https://olan1.github.io/milestone-project-1/" target=_blank>here</a> for a live demo.</p>
+
+<h2>UX</h2>
+
 <p>My design goals were to combine the flamboyant colourful nature of queen with a minimalist approach. All pages share a similar layout and color scheme in order to make navigation as easy and intuitive as possible for the user.</p>
 <p>Fans / potential fans can see an overview of each member, view pictures of live performances, watch music videos, view the trailer for the Bohemian Rhapsody feature film, and to purchase if they choose. They also have the ability to purchase other Queen memorabilia, and sign up either for the fan club or just to recieve updates on the band.</p>
 
+<h2>Technologies</h2>
+<p>1. HTML5</p>
+<p>2. CSS3</p>
+<p>3. Bootstrap (4.3.1)</p>
+<p>4. Hover.css</p>
 
+<h2>Features</h2>
+<p>A smooth scrolling effect was created using the "scroll-behavior: smooth" css property. The navbar remains in a collapsed form regardless of screen size to reduce content on screen. A Hover.css effect is used on the nav boxes on the home page to make their interactivity intuitive. This page also makes use of Bootstraps modal feature, and the CSS3 animation / keyframe feature</p> 
 
+<h3>Features Left to Implement</h3>
+<p>In future I would like to add full albums to the music section, with an animation that displays all songs in the album when the image is hovered over. I would also like to expand the video library library with autoplay and autostop functions. I would also like to add a scrolling effect using JavaScript as the "scroll-behavior: smooth" css property does not work on all browsers.</p>
 
+<h2>Testing</h2>
+<p>The header on each page contains the Queen logo and name, which are both links back to the homepage. Tooltips appear when hovered over notifying the user of their function. A font-awesome icon and title tell the user what page they are currently on. The navbar is fixed in place. The navigation menu is permanantly collapsed, and is opened using the menu icon on the right of the navbar. A Q icon and the current page the user is on can be seen in the browsers title bar.</p>
+<p>The footer on each page contains a form for the user to enter an email address. If you try to submit no email or an invalid email address, an error message will appear. The logo when clicked will cause smooth scrolling to the top of the page. A tooltip describes its functionality to the user. The social icons link to Queens social networking pages, which open in separate tabs when clicked.<p>
+<p>The home page showcases the band immediately, with a full screen-width picture of the band, letting the user know they are in the right place. Directly underneath this banner the user can see all the sections of the website with titles, images, font-awesome icons, and a Hover.css hover feature to encourage clicking. Underneath the illustrative navigation section, there is a back to top icon and title which when clicked will scroll smoothly back to the top of the page.</p>
+<p>The members page exhibits a large picture of all band members upon arrival. A separate picture of each band member is displayed accompanied by a short description. On smaller screens the description appears directly below the images, where as on larger screens it appears to the right of the image.</p>
+<p>The gallery page exhibits a large animation cycling through all pictures in the gallery. Below this is the video section. Each video is represented by a Bootstrap card. When the cards are hovered over, a red YouTube play icon transitions in. When clicked, a modal appears with the video. Once the video is played, it will continue playing until it finishes, even if the modal is closed. The videos are embedded from YouTube.</p>
+<p>The music page uses a fixed background showing a collage of Queen records. Spotify embeds allow short song samples to be played, and provide links to spotify to listen to the full song</p>
+<p>The film page exhibits a large fixed image of the film poster showing the cast as Queen. Below this is the a YouTube embed of the film trailer. This video resizes to take up the full screen of any device it is displayed on. Below this are cards displaying the movie on DVD, Bluray, and the book of the film. Each card is a link to purchase each item.</p>
+<p>The store section displays all the available products on cards. Each card has a hover transition effect to encourage clicking. Each card links to where the product can be purchased. The background is fixed. There is no header image for this page since the products are the main focus.</p>
+<p>The sign-up page is a simple form with a large fixed background. Each form input is required and an error message appears if they are empty. If an invalid email address is entered, an error message will appear. The terms and conditions text is a link that opens to a separate tab.</p>
+<p>This site was tested across multiple browsers (Chrome, Firefox, Safari and Microsoft Edge). It was tested on several screen sizes (iphone 6/7/8, 6+/7+/8+, X, ipad, and laptop screens). The scroll-behaviour property didn't work on Safari or Microsoft Edge. The scroll-effect was much quicker on firefox than Chrome. The animations do not work on Edge. The animation transitions do not work on Firefox. On mobile screens, fixed backgrounds appear zoomed in on Safari. This is an issue that GitHub is aware of and is currently being addressed. Fortunately the images that I have set the fixed property for are for asthethic colour and not to diplay information do no changes were required.</p>
 
-Technologies
-HTML
-CSS
-Bootstrap (3.3.7)
-Features
-This site uses the scrollSpy feature in Bootstrap with an extra JavaScript function added to create a 'smooth scrolling' effect. The navbar also stays collapsed regardless of the screen size to promote a minimalist design.
+<h2>Deployment</h2>
+<p>This site is hosted on GitHub. It is deployed directly by the master branch and will automatically update upon new commits to the master branch.</p>
 
-Features Left to Implement
-In the future, I would like to add further projects that I've worked on to create a more comprehensive 'work/travail' section. I would like to also add animations to the progress circles in the "skills/compétences" section to animate on a hover.
+<h2>Credits</h2>
 
-Testing
-The employer and recruiter user story achieved the intended outcome of providing them with a showcase of myself and my work. In the about me section, they can read a bit about my background, and if they're viewing on a desktop, the background of this section is a photo of me. They are able to see my showcased projects via the project cards in the "Work" section. They can view both the live version and the GitHub repository by clicking on the Font Awesome icons. They are also able to view my social media profiles via clicking on the icons in the footer. They are also able to download my CV by either clicking on CV in the navbar dropdown, or by clicking on the document icon in the footer.
+<h3>Content</h3>
+<p>All content in the members description section was sourced from the <a href="http://www.queenonline.com/" target="_blank">Official Queen website</a>.</p>
 
-If you try to submit the contact form with an invalid email address, there will be an error noting the invalid email address. Furthermore, the 'required' attribute is added to the 'name,' 'email,' and 'message' fields, so if those fields are not filled in, the form will not submit. If all field are valid, the page will reload. If an employer or recruiter is interested in contacting me, they will have to fill out all fields in order for the form to go through.
+<h3>Media</h3>
+<p>All image were taken from the <a href="http://www.queenonline.com/" target="_blank">Official Queen website</a>, <a href="https://cloudsfactory.net/queen-rock-band.html" target="_blank">cloudsfactory</a>, <a href="https://ultimateclassicrock.com/queen-albums-worst-to-best/" target="_blank">Ultimate Rock Classic</a>, and <a href="https://medium.com/one-reel-at-a-time/film-review-bohemian-rhapsody-5d4032f7fd79" target="_blank">Medium</a>.</p>
+<p>All videos were taken from <a href="https://www.youtube.com/" target=_blank>YouTube</a>.
+<p>All songs were taken from <a href="https://www.spotify.com/ie/" target=_blank>Spotify</a>.
 
-All links will open in a new tab using 'target="_blank"' and the CV will download to your default folder for downloads on click using the 'download' attribute. All links have been manually tested to ensure that they are pointing to the correct destination.
+<h3>Acknowledgements</h3>
+<p>The Hover.css effects can be found at this link <a href="https://ianlunn.github.io/Hover/" target="_blank">here</a></p>
+<p><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> provided the scroll-behaviour property, as well as clarification and explanations for many CSS properties and values.</p>
+<p><a href="https://wpshout.com/quick-guides/create-text-outline-css/" target="_blank">wpshout</a> provided the text-outline class.</p>
+<p>The key, value, personal-info-item and section-colum classes were taken from Code Institutes resume project.</p>
+<p>The <a href="https://www.haleyschafer.com/" target="_blank">Haley Schafer Portfolio</a> website's <a href="https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md#demo" target="_blank">README.md</a> was used as the template for this readme file.</p>
 
-By clicking on the links in the navbar, the scrollSpy effect will work regardless of whether or not you're viewing the sections in the same order they are listed in the dropdown navbar.
-
-This site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) to ensure compatibility and responsiveness. During the testing phase, I realized that background-attachment: fixed was not compatible with iOS browsers. On Chrome and Safari in iOS, the background photos appeared zoomed-in and blurry. To fix this, the background-attachment: scroll property value was added in a media query.
-
-Deployment
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone https://github.com/hschafer2017/HSCHAFER-Portfolio.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
-
-Credits
-Content
-All content in the "About Me/À Propos" and "Work/Travail" sections in this portfolio site were written by me.
-
-Media
-All photos were taken from Pexels, a stock image library, with the exception of the photo of myself in the background of the 'about me/À Propos' section in the desktop view. A greyscale filter was applied to each one prior to upload to preserve the greyscale theme.
-
-Acknowledgements
-The scrollSpy delay JavaScript function was found through this tutorial here.
-
-The progress circles from the skills section are modeled after the following Stack Overflow example. They were significantly modified to fit the styling, sizing, and progress for each skill.
-
-The media query for the collapsed navbar regardless of viewport width was taken from this site.
-
-This is for educational use.
+<p>This site is for educational purposes.</p>
