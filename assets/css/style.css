@@ -6,7 +6,7 @@
 /*-------------------------------------------------- Background*/
 
 .nav-bg-color {
-    background-color: rgb(92, 52, 138);
+    background-color: rgba(92, 52, 138, .8);
 }
 
 .bg-fade-light {
