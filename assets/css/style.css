@@ -91,7 +91,6 @@ body {
     font-family: 'Exo 2', sans-serif;
     color: #4a4a4f;
     background-color: rgb(92, 52, 138);
-    padding-top: 100px;
 }
 
 .text-outline {
@@ -134,9 +133,9 @@ section {
     min-height: 100vh;
 }
 
-header {
-    padding-bottom: 37.5%;
-    /* Aspect Ratio: ( 600 / 1600 ) x 100 = 56.25% - Source: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+.header {
+    padding-bottom: 45%;
+    padding-top: 100px;
 }
 
 .align-center {
@@ -277,7 +276,7 @@ a:hover {
     background-size: cover;
 
     animation-name: gallery-pics;
-    animation-direction: alternate;
+    animation-direction: normal;
     animation-duration: 40s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -330,7 +329,7 @@ a:hover {
     background-size: contain;
 
     animation-name: store-pics;
-    animation-direction: alternate;
+    animation-direction: normal;
     animation-duration: 30s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -508,7 +507,7 @@ a:hover {
 /*-------------------------------------------------- Music Section*/
 
 .music-container {
-    background: url(../images/music/albums.png) no-repeat center center;
+    background: url(../images/music/albums.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
