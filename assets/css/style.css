@@ -6,7 +6,7 @@
 /*-------------------------------------------------- Background*/
 
 .nav-bg-color {
-    background-color: rgba(92, 52, 138, 0.75);
+    background-color: rgba(92, 52, 138, 0.9);
 }
 
 .bg-fade-light {
@@ -629,6 +629,10 @@ a:hover {
 footer {
     margin: 0;
     padding: 20px;
+}
+
+footer h5{
+    font-size: 2rem;
 }
 
 .footer-container {
