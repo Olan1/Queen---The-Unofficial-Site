@@ -135,8 +135,8 @@ section {
 }
 
 header {
-    padding-bottom: 56.25%;
-    /* Aspect Ratio: ( 900 / 1600 ) x 100 = 56.25% - Source: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
+    padding-bottom: 37.5%;
+    /* Aspect Ratio: ( 600 / 1600 ) x 100 = 56.25% - Source: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap*/
 }
 
 .align-center {
