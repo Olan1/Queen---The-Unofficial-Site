@@ -5,7 +5,7 @@
 
 <h2>Demo</h2>
 
-<p>Click <a href="https://olan1.github.io/milestone-project-1/" target=_blank>here</a> for a live demo.</p>
+<p>Click <a href="https://olan1.github.io/milestone-project-1/" target="_blank">here</a> for a live demo.</p>
 
 <h2>UX</h2>
 
