@@ -17,7 +17,6 @@
 <p>1. HTML5</p>
 <p>2. CSS3</p>
 <p>3. Bootstrap (4.3.1)</p>
-<p>4. Hover.css</p>
 
 <h2>Features</h2>
 <p>A smooth scrolling effect was created using the "scroll-behavior: smooth" css property. The navbar remains in a collapsed form regardless of screen size to reduce content on screen. A Hover.css effect is used on the nav boxes on the home page to make their interactivity intuitive. This page also makes use of Bootstraps modal feature, and the CSS3 animation / keyframe feature.</p> 
