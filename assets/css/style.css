@@ -116,11 +116,6 @@ section {
     min-height: 100vh;
 }
 
-.header {
-    padding-bottom: 45%;
-    padding-top: 100px;
-}
-
 .align-center {
     display: inline-block;
     text-align: center;
@@ -168,13 +163,6 @@ a:hover {
 
 .my-btn:focus {
     box-shadow: 0 0 0 0.2rem rgba(200, 200, 200, 1);
-}
-
-.page-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .margin-auto {
@@ -242,6 +230,18 @@ a:hover {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #fafaff;
     transform: scale(1.01);
+}
+
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header {
+    padding-bottom: 45%;
+    padding-top: 100px;
 }
 
 /*-------------------------------------------------- Navigation Section*/
@@ -697,6 +697,10 @@ footer a:hover .fa-arrow-circle-up {
     .sign-up-container,
     .music-container {
         background-attachment: scroll;
+    }
+    
+    .fixed-top {
+        position: static;
     }
 }
 
