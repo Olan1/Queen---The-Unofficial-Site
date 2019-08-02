@@ -74,7 +74,7 @@ html {
 
 body {
     margin: 0;
-    padding: 100px 0 0;
+    padding: 0;
     font-family: 'Exo 2', sans-serif;
     color: #4a4a4f;
     background-color: rgb(92, 52, 138);
@@ -189,7 +189,7 @@ a:hover {
 }
 
 .home-header-container {
-    background: url(../images/header/band-pose.png) no-repeat center center;
+    background: url(../images/header/band-pose.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -245,8 +245,7 @@ a:hover {
 }
 
 .header {
-    padding-bottom: 45%;
-    padding-top: 100px;
+    padding: 100px 0 45% 0;
 }
 
 /*-------------------------------------------------- Navigation Section*/
@@ -309,8 +308,24 @@ a:hover {
 
 /* /.Source: w3schools */
 
+.members-nav {
+    background: url(../images/members/members-nav.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .music-nav {
     background: url(../images/music/albums.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.film-nav {
+    background: url(../images/film/film.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -410,7 +425,7 @@ a:hover {
 }
 
 .members-header-container {
-    background: url(../images/members/members-nav.png) no-repeat center center;
+    background: url(../images/members/members-nav.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -488,6 +503,20 @@ a:hover {
 
 /*-------------------------------------------------- Gallery Section*/
 
+.gallery-container {
+    background: url("../images/gallery/slide-one.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*Source: w3schools - https://www.w3schools.com/css/css3_animations.asp*/
+    animation-name: gallery-pics;
+    animation-direction: normal;
+    animation-duration: 40s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
 .vidImage+.fa-youtube-play {
     margin: 0;
     padding: 0;
@@ -536,7 +565,7 @@ a:hover {
 /*-------------------------------------------------- Film Section*/
 
 .film-container {
-    background: url(../images/film/film.png) no-repeat center center;
+    background: url(../images/film/film.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -708,6 +737,19 @@ footer a:hover .fa-arrow-circle-up {
     .sign-up-container,
     .music-container {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-header-container,
+    .members-header-container,
+    .film-container,
+    .gallery-container {
+        background-attachment: scroll;
+    }
+    
+    body {
+        padding-top: 100px;
     }
 }
 
