@@ -70,7 +70,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 100px 0 0;
     font-family: 'Exo 2', sans-serif;
     color: #4a4a4f;
     background-color: rgb(92, 52, 138);
@@ -255,7 +255,7 @@ a:hover {
     height: 50vh;
 }
 
-.nav-container span {
+.nav-container div {
     display: block;
     height: 100%;
     width: 100%;
@@ -516,6 +516,10 @@ a:hover {
     background-size: cover;
 }
 
+#music iframe{
+    border: none;
+}
+
 /*-------------------------------------------------- Film Section*/
 
 .film-container {
@@ -529,13 +533,6 @@ a:hover {
 #trailer {
     padding: 0;
     margin: 0;
-}
-
-.trailerHeading {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: 0.8;
 }
 
 .trailer-bg {
@@ -697,10 +694,6 @@ footer a:hover .fa-arrow-circle-up {
     .sign-up-container,
     .music-container {
         background-attachment: scroll;
-    }
-    
-    .fixed-top {
-        position: absolute;
     }
 }
 

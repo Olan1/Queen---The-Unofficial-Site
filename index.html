@@ -21,8 +21,8 @@
     <header id="home" class="container-fluid home-header-container text-outline header">
         <nav class="navbar navbar-light nav-bg-color fixed-top">
             <a href="index.html" class="navbar-brand" data-toggle="tooltip" title="Home">
-                <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png">
-                <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png">
+                <img class="img-fluid" src="assets/images/header/queen-coat-of-arms.png" alt="Queen Logo">
+                <img class="img-fluid d-none d-sm-inline-block" src="assets/images/header/queen-logo.png" alt="Queen">
             </a>
             <div class="margin-auto">
                 <h3 class="page-header uppercase text-outline"><i class="fa fa-home" aria-hidden="true"></i>Home</h3>
@@ -52,14 +52,22 @@
             <!--Members-->
             <div class="col-lg-6 nav-container">
                 <a href="members.html" data-toggle="tooltip" title="Members">
-                    <span class="members-header-container"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3></span></span>
+                    <div class="members-header-container">
+                        <div class="hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-hand-rock-o" aria-hidden="true"></i>Members</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <!--Gallery-->
             <div class="col-lg-6 nav-container">
                 <a href="gallery.html" data-toggle="tooltip" title="Gallery">
-                    <span class="gallery-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-camera-retro"></i>Gallery</h3></span></span>
+                    <div class="gallery-nav">
+                        <div class="hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-camera-retro"></i>Gallery</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -68,14 +76,22 @@
             <!--Music-->
             <div class="col-lg-6 nav-container">
                 <a href="music.html" data-toggle="tooltip" title="Music">
-                    <span class="music-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-headphones"></i>Music</h3></span></span>
+                    <div class="music-nav">
+                        <div class="hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-headphones"></i>Music</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <!--Film-->
             <div class="col-lg-6 nav-container">
                 <a href="film.html" data-toggle="tooltip" title="Film">
-                    <span class="film-container"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-film"></i>Film</h3></span></span>
+                    <div class="film-container">
+                        <div class="hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-film"></i>Film</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -84,14 +100,22 @@
             <!--Store-->
             <div id="store-nav" class="col-lg-6 nav-container">
                 <a href="store.html" data-toggle="tooltip" title="Store">
-                    <span class="store-nav"><span class="overlay-dark hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3></span></span>
+                    <div class="store-nav">
+                        <div class="overlay-dark hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Store</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <!--Sign Up-->
             <div class="col-lg-6 nav-container">
                 <a href="sign-up.html" data-toggle="tooltip" title="Sign Up">
-                    <span class="sign-up-nav"><span class="hvr-shutter-out-vertical"><h3 class="uppercase text-outline nav-head"><i class="fa fa-hand-rock-o"></i>Join Us</h3></span></span>
+                    <div class="sign-up-nav">
+                        <div class="hvr-shutter-out-vertical">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-hand-rock-o"></i>Join Us</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -100,7 +124,11 @@
             <!--Back to top-->
             <div class="col-12 nav-container">
                 <a href="#home" data-toggle="tooltip" title="Top">
-                    <span class="back-to-top-nav overlay-light hvr-shutter-out-vertical"><span class="top-logo"><h3 class="uppercase text-outline nav-head"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Back To Top</h3></span></span>
+                    <div class="back-to-top-nav overlay-light hvr-shutter-out-vertical">
+                        <div class="top-logo">
+                            <h3 class="uppercase text-outline nav-head"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Back To Top</h3>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -116,7 +144,7 @@
                 <h5 class="uppercase text-white pb-4">Get Queen Updates</h5>
                 <form class="form-sm justify-content-center inline-block">
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-sm" id="emailUpdates" aria-describedby="emailHelp" placeholder="Email" required>
+                        <input type="email" class="form-control form-control-sm" id="emailUpdates" placeholder="Email" required>
                     </div>
                     <button type="submit" class="btn my-btn text-outline">Submit</button>
                 </form>
@@ -139,19 +167,19 @@
                     <li class="list-inline-item ">
                         <a href="https://www.facebook.com/Queen/" target="_blank" data-toggle="tooltip" title="Facebook">
                             <i class="fa fa-facebook"></i>
-                            <span class="sr-only">Facebook</span>
+                            <div class="sr-only">Facebook</div>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="https://twitter.com/QueenWillRock?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" data-toggle="tooltip" title="Twitter">
                             <i class="fa fa-twitter"></i>
-                            <span class="sr-only">Twitter</span>
+                            <div class="sr-only">Twitter</div>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="https://www.instagram.com/officialqueenmusic/" target="_blank" data-toggle="tooltip" title="Instagram">
                             <i class="fa fa-instagram"></i>
-                            <span class="sr-only">Instagram</span>
+                            <div class="sr-only">Instagram</div>
                         </a>
                     </li>
                 </ul>
@@ -159,19 +187,19 @@
                     <li class="list-inline-item">
                         <a href="https://www.youtube.com/user/queenofficial/videos?app=desktop" target="_blank" data-toggle="tooltip" title="YouTube">
                             <i class="fa fa-youtube-play"></i>
-                            <span class="sr-only">YouTube</span>
+                            <div class="sr-only">YouTube</div>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="https://music.apple.com/us/artist/queen/3296287" target="_blank" data-toggle="tooltip" title="Apple Music">
                             <i class="fa fa-apple"></i>
-                            <span class="sr-only">Apple Music</span>
+                            <div class="sr-only">Apple Music</div>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" target="_blank" data-toggle="tooltip" title="Spotify">
                             <i class="fa fa-spotify"></i>
-                            <span class="sr-only">Spotify</span>
+                            <div class="sr-only">Spotify</div>
                         </a>
                     </li>
                 </ul>
