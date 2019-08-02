@@ -53,9 +53,13 @@
     -o-transition: all 0.2s ease-in-out;
 }
 
+/*Hover.css class*/
+
 .hvr-shutter-out-vertical {
     background-color: transparent;
 }
+
+/*Hover.css class*/
 
 .hvr-shutter-out-vertical:before {
     background-color: rgba(92, 52, 138, 0.3);
@@ -76,12 +80,13 @@ body {
     background-color: rgb(92, 52, 138);
 }
 
+/*Source: wpshout - https://wpshout.com/quick-guides/create-text-outline-css/*/
+
 .text-outline {
     text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-    /*Source: https://wpshout.com/quick-guides/create-text-outline-css/*/
 }
 
 h1 {
@@ -267,7 +272,7 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    /*Source: w3schools - https://www.w3schools.com/css/css3_animations.asp*/
     animation-name: gallery-pics;
     animation-direction: normal;
     animation-duration: 40s;
@@ -302,6 +307,8 @@ a:hover {
     }
 }
 
+/* /.Source: w3schools */
+
 .music-nav {
     background: url(../images/music/albums.png) no-repeat center center;
     -webkit-background-size: cover;
@@ -320,7 +327,7 @@ a:hover {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
-
+    /*Source: w3schools - https://www.w3schools.com/css/css3_animations.asp*/
     animation-name: store-pics;
     animation-direction: normal;
     animation-duration: 30s;
@@ -366,6 +373,8 @@ a:hover {
         background-image: url("../images/store/statue.png");
     }
 }
+
+/* /.Source: w3schools */
 
 .sign-up-nav {
     background: url(../images/sign-up/sign-up.png) no-repeat, center, center;
@@ -417,6 +426,8 @@ a:hover {
     text-align: right;
 }
 
+/* Source: Code Institutes resume project */
+
 .section-column {
     display: table-cell;
     padding: 0 30px 30px;
@@ -461,6 +472,8 @@ a:hover {
     position: relative;
     /* Relative to its predecesar*/
 }
+
+/* /.Source: Code Institutes resume project */
 
 .divider-lg {
     width: 75vw;
@@ -516,7 +529,7 @@ a:hover {
     background-size: cover;
 }
 
-#music iframe{
+#music iframe {
     border: none;
 }
 
@@ -608,15 +621,11 @@ a:hover {
     top: 25vh;
 }
 
-.form-check-label {
-    color: #fafafa;
-}
-
-
 #fan-club a {
     color: #a45df5;
 }
 
+.form-check-label,
 #fan-club a:hover {
     color: #fafafa;
 }
@@ -636,9 +645,12 @@ footer h5 {
     background-color: #9f9ea3;
 }
 
+/* Source: Code Institutes resume project */
+
 .social-links {
     padding-bottom: 15px;
 }
+
 
 .social-links li a i {
     border: 1px solid #000;
@@ -661,6 +673,8 @@ footer h5 {
     background-color: rgb(70, 42, 129);
     transform: scale(1.1);
 }
+
+/* /.Source: Code Institutes resume project */
 
 .form-sm {
     width: 250px;
