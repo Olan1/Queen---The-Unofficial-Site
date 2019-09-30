@@ -1,4 +1,4 @@
-<h1>Queen Unnoficial Website</h1>
+<h1>Queen Unofficial Website</h1>
 
 <p>Stream One Project: User Centric Frontend Development - Code Institute</p>
 <p>This is a website for the rock band Queen. It details all original members, contains photos of both live and staged performances, music videos, the Bohemian Rhapsody film trailer with links to buy the film, a store to buy Queen memorabilia, and a fan club sign up.</p>
