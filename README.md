@@ -36,6 +36,7 @@
 <p>The sign-up page is a simple form with a large fixed background on screens over 576px. Each form input is required and an error message appears if they are empty. If an invalid email address is entered, an error message will appear. The terms and conditions text is a link that opens to a separate tab.</p>
 <p>This site was tested across multiple browsers (Chrome, Firefox, Safari and Microsoft Edge). It was tested on several screen sizes (iphone 7, iphone 8+, iphone X, google nexus, ipad, 13", 15" and 27" monitors). The scroll-behaviour property doesn't work on Safari or Microsoft Edge. The scroll-effect was much quicker on firefox than Chrome. The animations do not work on Edge. The animation transitions do not work on Firefox. On ios mobile screens, fixed backgrounds appear zoomed in and blurry. This is an issue that GitHub is aware of and is currently addressing. I used a media query to change background-attachment from fixed to scroll for all screens below 576px.</p>
 
+
 <h2>Deployment</h2>
 <p>This site is hosted on GitHub. It is deployed directly by the master branch and will automatically update upon new commits to the master branch.</p>
 
