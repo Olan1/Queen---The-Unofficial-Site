@@ -1,7 +1,6 @@
 <h1>Queen Unofficial Website</h1>
 
-<p>Stream One Project: User Centric Frontend Development - Code Institute</p>
-<p>This is a website for the rock band Queen. It details all original members, contains photos of both live and staged performances, music videos, the Bohemian Rhapsody film trailer with links to buy the film, a store to buy Queen memorabilia, and a fan club sign up.</p>
+<p>This is a front-end website created for the rock band Queen. It details all original members, contains photos of both live and staged performances, music videos, the Bohemian Rhapsody film trailer with links to buy the film, a store to buy Queen memorabilia, and a fan club sign up.</p>
 
 <h2>Demo</h2>
 
@@ -9,9 +8,9 @@
 
 <h2>UX</h2>
 
-<p>My design goals were to combine the flamboyant colourful nature of Queen with a minimalist approach. All pages share a similar layout and color scheme in order to make navigation as easy and intuitive as possible for the user.</p>
+<p>My design goals were to combine the colourful nature of Queen with a minimalist approach. All pages share a similar layout and color scheme in order to make navigation as easy and intuitive as possible for the user.</p>
 <p>The wireframes for this site can be found <a href="https://github.com/Olan1/milestone-project-1/blob/master/assets/wireframes/wireframes.pdf" target="_blank">here</a>.</p>
-<p>Fans / potential fans can see an overview of each member, view pictures of live performances, watch music videos, view the trailer for the Bohemian Rhapsody feature film, and to purchase if they choose. They also have the ability to purchase other Queen memorabilia, and sign up either for the fan club or just to recieve updates on the band.</p>
+<p>Fans can see an overview of each member, view pictures of live performances, watch music videos, view the trailer for the Bohemian Rhapsody feature film, and to purchase if they choose. They also have the ability to purchase other Queen memorabilia, and sign up either for the fan club or just to recieve updates on the band.</p>
 
 <h2>Technologies</h2>
 <p>1. HTML5</p>
@@ -56,6 +55,5 @@
 <p><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> provided the scroll-behaviour property, as well as clarification and explanations for many CSS properties and values.</p>
 <p><a href="https://wpshout.com/quick-guides/create-text-outline-css/" target="_blank">wpshout</a> provided the text-outline class.</p>
 <p>The key, value, personal-info-item and section-colum classes were taken from Code Institutes resume project.</p>
-<p>The <a href="https://www.haleyschafer.com/" target="_blank">Haley Schafer Portfolio</a> website's <a href="https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md#demo" target="_blank">README.md</a> was used as the template for this readme file.</p>
 
 <p>This site is for educational purposes.</p>
