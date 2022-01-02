@@ -54,6 +54,5 @@
 <p>The Hover.css effects can be found at this link <a href="https://ianlunn.github.io/Hover/" target="_blank">here</a>.</p>
 <p><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> provided the scroll-behaviour property, as well as clarification and explanations for many CSS properties and values.</p>
 <p><a href="https://wpshout.com/quick-guides/create-text-outline-css/" target="_blank">wpshout</a> provided the text-outline class.</p>
-<p>The key, value, personal-info-item and section-colum classes were taken from Code Institutes resume project.</p>
 
 <p>This site is for educational purposes.</p>
