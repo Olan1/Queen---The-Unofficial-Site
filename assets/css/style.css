@@ -442,7 +442,6 @@ a:hover {
     text-align: right;
 }
 
-/* Source: Code Institutes resume project */
 
 .section-column {
     display: table-cell;
@@ -488,8 +487,6 @@ a:hover {
     position: relative;
     /* Relative to its predecesar*/
 }
-
-/* /.Source: Code Institutes resume project */
 
 .divider-lg {
     width: 75vw;
@@ -675,8 +672,6 @@ footer h5 {
     background-color: #9f9ea3;
 }
 
-/* Source: Code Institutes resume project */
-
 .social-links {
     padding-bottom: 15px;
 }
@@ -703,8 +698,6 @@ footer h5 {
     background-color: rgb(70, 42, 129);
     transform: scale(1.1);
 }
-
-/* /.Source: Code Institutes resume project */
 
 .form-sm {
     width: 250px;
